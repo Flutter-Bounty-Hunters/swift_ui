@@ -15,8 +15,11 @@ Once a widget, screen, or flow is spec'd out, based on visible Apple behavior, t
 ### Test Something
 Implementations are expected to include tests, but it's easy to miss things along the way. If a user-visible feature is un-tested, then it would be helpful to add appropriate tests to lock down that feature.
 
+### Document Something
+If anything contributions make it into this package without useful documentation, consider adding or improving that documentation.
+
 ### Post to Social Media
-If you think that some of the widgets in this toolkit are neat, or you buid something interesting with these widgets, post a screenshot or video to social media to spread the word.
+If you think that some of the widgets in this toolkit are neat, or you build something interesting with these widgets, post a screenshot or video to social media to spread the word.
 
 ### Publish Videos
 Consider publishing videos to YouTube, Rumble, or Twitter, demonstrating your contributions to, or use of the `swift_ui` package.
@@ -45,8 +48,35 @@ The following coding practices should be followed unless there are significant a
 
 ### Style
  * Run `dartfmt` formatting with a line length of 120 characters.
- * Name a direct Swift UI analog with a `SwiftUi` prefix, e.g., "Form" as "SwiftUiForm", "Section" as "SwiftUiSection".
+ * Use the same artifact names as Swift UI, when possible, e.g., an `HStack` widget, `VStack` widget, `Table` widget, etc.
+   * If a Swift UI name has a significant naming conflict, choose the least bad alternative, e.g., `ListView` instead of `List` because `List` is a core Dart data type.
  * Include Dart Docs for all non-trivial public classes, methods, properties, and functions.
+   * When possible, consider using descriptions similar to those in the Swift UI documentation.
  * Include Dart Docs for tricky private classes, methods, properties, and functions.
  * Include Code comments for any tricky segment of code.
  * Use file and directory packaging that matches existing project practices.
+
+### API Paradigm
+It's well known among Flutter and Swift UI developers that each toolkit uses a fundamentally different composition paradigm.
+
+Flutter explicitly composes a widget tree from the outside in. Swift UI implicitly composes a view tree, using modifier methods, from the inside out.
+
+The goal of the `swift_ui` package is to replicate the user experience (UX) of Swift UI, **NOT** the inside-out composition paradigm. Flutter's existing widget composition paradigm should be sufficient to reasonably accomplish all Swift UI cloning goals.
+
+Contributions that attempt to switch from Flutter's standard widget composition paradigm, to an extension method builder paradigm, will be rejected.
+
+### New Concepts and Re-used Concepts
+Sometimes it makes sense to duplicate an existing Flutter concept in `swift_ui`, and other times it doesn't.
+
+As a guiding principle, any Swift UI view should be cloned by a widget in `swift_ui`, even if Flutter already has a similar widget. For example, Swift UI has a `VStack` which is conceptually similar to Flutter's `Column`. Despite the similarity, `swift_ui` should introduce a `SwiftUiVStack` widget.
+
+Some Swift UI types will be very similar to Flutter types, but slightly different. For example, Swift UI defines `VerticalAlignment` which is very similar to Flutter's `CrossAxisAlignment`. However, `VerticalAlignment` includes a `firstTextBaseline` and `lastTextBaseline`, while Flutter only offers a single `baseline`. As such, `swift_ui` should create `SwiftUiVerticalAlignment` to match Swift UI.
+
+In cases where a Swift UI type introduces nothing of value beyond an existing Flutter type, use the existing Flutter type instead of creating a new type. For example, a `CGFloat` should be represented by a Dart `double`, a Swift UI `EdgeInsets` should be represented by a Flutter `EdgeInsets`, etc.
+
+### Don't Reference Material Design
+The goal of this package is to prove Flutter's ability to render Apple-style user interfaces, when needed. Ideally, this goal will ease the transition for Apple developers over to Flutter.
+
+Apple developers are notoriously tribal. If they see any reference to Material Design anywhere in the code, it might trigger them to run away, because they think that using Material Design means they're embracing Google and Android.
+
+Though it may take some extra work to pull it off, `swift_ui` should avoid importing any files from Material. If Material artifacts are required, consider copying them from Flutter into this package.
