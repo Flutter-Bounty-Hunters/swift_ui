@@ -11,4 +11,4 @@ Provide a near pixel-perfect replica of Apple's Swift UI experience in Flutter, 
 <br><br>
 
 # Want to Help?
-Cloning Swift UI is a large and on-going task. The project can use all the help it can get. There are both technical and non-technical ways that you can help. Please see the contributing guide to learn more.
+Cloning Swift UI is a large and on-going task. The project can use all the help it can get. There are both technical and non-technical ways that you can help. Please see the [contributing guide](CONTRIBUTING.md) to learn more.
