@@ -7,7 +7,13 @@
 <br><br>
 
 # The Mission
-Provide a near pixel-perfect replica of Apple's Swift UI experience in Flutter, so that developers can rest assured that Flutter is every bit as capable of a UI toolkit as is Swift UI.
+Provide a near pixel-perfect replica of Apple's Swift UI experience in Flutter.
+
+This mission serves multiple purposes:
+
+ * Show developers that Flutter is a great choice for iOS development.
+ * Remove the Cupertino burden from the Flutter framework team so they can focus on the framework.
+ * Demonstrate that the Flutter community can come together to solve large problems.
 <br><br>
 
 # Want to Help?
