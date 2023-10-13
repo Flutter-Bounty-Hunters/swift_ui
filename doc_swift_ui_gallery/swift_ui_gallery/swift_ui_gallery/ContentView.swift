@@ -11,14 +11,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("Hello, world!")
+                    .navigationBarTitle("Navigation 0")
+                
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
+                    .navigationTitle("Navigation 1")
                 
                 NavigationLink("Tap Me", destination: Text("Second View"))
                 
                 Text("Hello, world!")
-                    .navigationBarTitle("Navigation")
+                    .navigationBarTitle("Navigation 1")
             }
             .padding()
         }

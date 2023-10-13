@@ -4,7 +4,7 @@ version: 0.0.1
 repository: https://github.com/Flutter-Bounty-Hunters/swift_ui
 
 environment:
-  sdk: '>=3.2.0-131.0.dev <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

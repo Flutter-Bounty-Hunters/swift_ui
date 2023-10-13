@@ -1,3 +1,2 @@
-## 0.0.1
-
-* TODO: Describe initial release.
+## 0.0.1 - Sept, 2023
+Setting up the project structure. This release is not usable.

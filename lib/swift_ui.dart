@@ -19,3 +19,6 @@ export 'src/layout_adjustments/frame.dart';
 
 // Shapes
 export 'src/shapes/ellipse.dart';
+
+// Infrastructure
+export 'src/infrastructure/late_bound_build.dart';
