@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Flutter-Bounty-Hunters/swift_ui/blob/main/doc/branding/flutter-swift-ui_logo_128.png"><br>
+  <img src="https://github.com/Flutter-Bounty-Hunters/swift_ui/assets/7259036/6818ee38-c6be-4eee-807c-7d83cabe2e40"><br>
   <span style="display:block; font-size: 34px; font-weight:bold;"><b>Swift UI</b></span><br>
   <span style="display:block; font-size: 24;">BY FLUTTER</span><br><br>
   <p align="center">A Flutter port of the Swift UI toolkit.</p>
