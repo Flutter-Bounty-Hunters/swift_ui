@@ -1,30 +1,31 @@
-//
-//  ContentView.swift
-//  swift_ui_gallery
-//
-//  Created by Matt Carroll on 9/25/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Hello, world!")
-                    .navigationBarTitle("Navigation 0")
-                
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                    .navigationTitle("Navigation 1")
-                
-                NavigationLink("Tap Me", destination: Text("Second View"))
-                
-                Text("Hello, world!")
-                    .navigationBarTitle("Navigation 1")
+        TabView {
+            PrimitivesPage().tabItem{
+                Label("Primitives", systemImage: "square.fill.on.circle.fill")
             }
-            .padding()
+            
+            LayoutsPage().tabItem{
+                Label("Layouts", systemImage: "square.3.layers.3d")
+            }
+            
+            CollectionsPage().tabItem{
+                Label("Collections", systemImage: "tablecells")
+            }
+            
+            ScaffoldsPage().tabItem{
+                Label("Scaffolds", systemImage: "square.leftthird.inset.filled")
+            }
+            
+            ControlsPage().tabItem{
+                Label("Controls", systemImage: "slider.horizontal.3")
+            }
+            
+            MotionPage().tabItem{
+                Label("Motion", systemImage: "move.3d")
+            }
         }
     }
 }
