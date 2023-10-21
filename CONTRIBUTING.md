@@ -16,7 +16,7 @@ Once a widget, screen, or flow is spec'd out, based on visible Apple behavior, t
 Implementations are expected to include tests, but it's easy to miss things along the way. If a user-visible feature is un-tested, then it would be helpful to add appropriate tests to lock down that feature.
 
 ### Document Something
-If anything contributions make it into this package without useful documentation, consider adding or improving that documentation.
+If any contributions make it into this package without useful documentation, consider adding or improving that documentation.
 
 ### Post to Social Media
 If you think that some of the widgets in this toolkit are neat, or you build something interesting with these widgets, post a screenshot or video to social media to spread the word.
@@ -68,9 +68,9 @@ Contributions that attempt to switch from Flutter's standard widget composition 
 ### New Concepts and Re-used Concepts
 Sometimes it makes sense to duplicate an existing Flutter concept in `swift_ui`, and other times it doesn't.
 
-As a guiding principle, any Swift UI view should be cloned by a widget in `swift_ui`, even if Flutter already has a similar widget. For example, Swift UI has a `VStack` which is conceptually similar to Flutter's `Column`. Despite the similarity, `swift_ui` should introduce a `SwiftUiVStack` widget.
+As a guiding principle, any Swift UI view should be cloned by a widget in `swift_ui`, even if Flutter already has a similar widget. For example, Swift UI has a `VStack` which is conceptually similar to Flutter's `Column`. Despite the similarity, the `swift_ui` package should introduce a `VStack` widget.
 
-Some Swift UI types will be very similar to Flutter types, but slightly different. For example, Swift UI defines `VerticalAlignment` which is very similar to Flutter's `CrossAxisAlignment`. However, `VerticalAlignment` includes a `firstTextBaseline` and `lastTextBaseline`, while Flutter only offers a single `baseline`. As such, `swift_ui` should create `SwiftUiVerticalAlignment` to match Swift UI.
+Some Swift UI types will be very similar to Flutter types, but slightly different. For example, Swift UI defines `VerticalAlignment` which is very similar to Flutter's `CrossAxisAlignment`. However, `VerticalAlignment` includes a `firstTextBaseline` and `lastTextBaseline`, while Flutter only offers a single `baseline`. As such, the `swift_ui` package should create `VerticalAlignment` to match Swift UI.
 
 In cases where a Swift UI type introduces nothing of value beyond an existing Flutter type, use the existing Flutter type instead of creating a new type. For example, a `CGFloat` should be represented by a Dart `double`, a Swift UI `EdgeInsets` should be represented by a Flutter `EdgeInsets`, etc.
 
