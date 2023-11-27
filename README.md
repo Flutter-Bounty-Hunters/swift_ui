@@ -4,7 +4,7 @@
   <p align="center">A Flutter port of the Swift UI toolkit.</p>
   <p align="center"><i>This package is not affiliated with Apple or any Apple technologies.</i></p>
   <br>
-  <p align="center"><a href="https://discord.gg/Cp5p6cUk" title="Join our Discord channel"><picture><img src="https://github.com/Flutter-Bounty-Hunters/swift_ui/assets/7259036/6e89d71c-45b4-48ec-a204-7076c5be31b8" width="96"/></picture></a></p>
+  <p align="center"><a href="https://discord.gg/NmYjC83Ep4" title="Join our Discord channel"><picture><img src="https://github.com/Flutter-Bounty-Hunters/swift_ui/assets/7259036/6e89d71c-45b4-48ec-a204-7076c5be31b8" width="96"/></picture></a></p>
 </p>
 <br><br>
 
