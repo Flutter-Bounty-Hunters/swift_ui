@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		719116892B216D500007C4DE /* TextOptionsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719116882B216D500007C4DE /* TextOptionsPage.swift */; };
+		7191168B2B2171010007C4DE /* TextInitializationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191168A2B2171010007C4DE /* TextInitializationPage.swift */; };
+		7191168D2B217F0E0007C4DE /* TextStylePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191168C2B217F0E0007C4DE /* TextStylePage.swift */; };
+		7191168F2B2197F90007C4DE /* TextFittingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191168E2B2197F90007C4DE /* TextFittingPage.swift */; };
 		C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902DDE42AE38C8A00242DBA /* VStackExamples.swift */; };
 		C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902DDE62AE3904400242DBA /* TodoPage.swift */; };
 		C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAE2802AC23AB40042DBC7 /* swift_ui_galleryApp.swift */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		719116882B216D500007C4DE /* TextOptionsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOptionsPage.swift; sourceTree = "<group>"; };
+		7191168A2B2171010007C4DE /* TextInitializationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInitializationPage.swift; sourceTree = "<group>"; };
+		7191168C2B217F0E0007C4DE /* TextStylePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStylePage.swift; sourceTree = "<group>"; };
+		7191168E2B2197F90007C4DE /* TextFittingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFittingPage.swift; sourceTree = "<group>"; };
 		C902DDE42AE38C8A00242DBA /* VStackExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackExamples.swift; sourceTree = "<group>"; };
 		C902DDE62AE3904400242DBA /* TodoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoPage.swift; sourceTree = "<group>"; };
 		C9CAE27D2AC23AB40042DBC7 /* swift_ui_gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_ui_gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719116872B216D060007C4DE /* text */ = {
+			isa = PBXGroup;
+			children = (
+				719116882B216D500007C4DE /* TextOptionsPage.swift */,
+				7191168A2B2171010007C4DE /* TextInitializationPage.swift */,
+				7191168C2B217F0E0007C4DE /* TextStylePage.swift */,
+				7191168E2B2197F90007C4DE /* TextFittingPage.swift */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
 		C9CAE2742AC23AB40042DBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +174,7 @@
 		C9CAE2B42AE107B60042DBC7 /* primitives */ = {
 			isa = PBXGroup;
 			children = (
+				719116872B216D060007C4DE /* text */,
 				C9CAE2AA2ADFB1480042DBC7 /* PrimitivesPage.swift */,
 				C9CAE2BC2AE10C4C0042DBC7 /* TextPage.swift */,
 			);
@@ -333,12 +353,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CAE2AD2AE106420042DBC7 /* CollectionsPage.swift in Sources */,
+				719116892B216D500007C4DE /* TextOptionsPage.swift in Sources */,
+				7191168F2B2197F90007C4DE /* TextFittingPage.swift in Sources */,
 				C9CAE2832AC23AB40042DBC7 /* ContentView.swift in Sources */,
 				C9CAE2BB2AE1089A0042DBC7 /* LayoutsPage.swift in Sources */,
 				C9CAE2B12AE1065F0042DBC7 /* ControlsPage.swift in Sources */,
+				7191168D2B217F0E0007C4DE /* TextStylePage.swift in Sources */,
 				C9CAE2AB2ADFB1480042DBC7 /* PrimitivesPage.swift in Sources */,
 				C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */,
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
+				7191168B2B2171010007C4DE /* TextInitializationPage.swift in Sources */,
 				C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */,
 				C9CAE2BD2AE10C4C0042DBC7 /* TextPage.swift in Sources */,
 				C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */,
