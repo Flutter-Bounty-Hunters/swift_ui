@@ -6,7 +6,7 @@ struct PrimitivesPage: View {
             List() {
                 Section() {
                     NavigationLink {
-                        TextOptionsPage()
+                        TextPage()
                     } label: {
                         Text("All styles")
                     }

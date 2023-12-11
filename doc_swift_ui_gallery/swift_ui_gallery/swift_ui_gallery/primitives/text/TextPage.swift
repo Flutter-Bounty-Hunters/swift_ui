@@ -1,35 +1,30 @@
 import SwiftUI
 
-struct TextOptionsPage: View {
+struct TextPage: View {
     var body: some View {
         NavigationStack {
             List() {
                 Section() {
                     NavigationLink {
-                        TextInitializationPage()
+                        TextTypographyPage()
                     } label: {
-                        Text("Initialization")
+                        Text("Typography")
                     }
                     
                     NavigationLink {
-                        TextStylePage()
+                        TextLocalizationPage()
                     } label: {
-                        Text("Style")
+                        Text("Localization")
                     }
                     
                     NavigationLink {
-                        TextFittingPage()
+                        TextAccessibilityPage()
                     } label: {
-                        Text("Fitting")
+                        Text("Accessibility")
                     }
                     
-                    TodoLink(label: "Attributed String")
-                    
-                    TodoLink(label: "Localization")
-                    
-                    TodoLink(label: "Accessibility")
                 } header: {
-                    Text("Text")
+                    Text("UX divisions")
                 }
             }.navigationTitle("Text")
         }
@@ -38,6 +33,6 @@ struct TextOptionsPage: View {
 
 struct TextOptions_Previews: PreviewProvider {
     static var previews: some View {
-        TextOptionsPage()
+        TextPage()
     }
 }

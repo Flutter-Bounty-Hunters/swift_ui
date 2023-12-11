@@ -1,9 +1,41 @@
+//
+
 import SwiftUI
 
-struct TextStylePage: View {
+struct TextTypographyPage: View {
+    var attributedString: AttributedString {
+        var attributedString = AttributedString("Blue text")
+        attributedString.foregroundColor = .blue
+        return attributedString
+    }
+    
+    var days = 5;
+    var closedRangeDate: ClosedRange<Date> {
+        let startDate = Date() // current date and time
+        let endDate = Calendar.current.date(byAdding: .day, value: days, to: startDate)!
+
+            return startDate...endDate
+    }
+    
+    var dateInterval: DateInterval {
+        let startDate = Date()
+        let endDate = Calendar.current.date(byAdding: .day, value: days, to: startDate)!
+        return DateInterval(start: startDate, end: endDate)
+    }
+    
+    var date: Date {
+        let components = DateComponents(year: 2023, month: 12, day: 7)
+        let calendar = Calendar.current
+        return calendar.date(from: components)!
+    }
+    
     var body: some View {
         ScrollView {
-            VStack(spacing: 24) {
+            VStack(spacing: 24)  {
+                
+                
+                
+                // General styling
                 VStack(spacing: 24) {
                     Text("Hello, world!")
                     
@@ -83,7 +115,7 @@ struct TextStylePage: View {
                 
                 Divider()
                 
-                // predefined styles
+                // predefined font styles
                 VStack(spacing: 24) {
                     Text("Large Title")
                         .font(.largeTitle)
@@ -207,19 +239,111 @@ struct TextStylePage: View {
                 
                 Divider()
                 
+                // forground styles
                 HStack {
                     Text("Red").foregroundStyle(.red)
                     Text("Green").foregroundStyle(.green)
                     Text("Blue").foregroundStyle(.blue)
                 }
+                
+                Divider()
+                
+                // Attributed strings
+                //
+                VStack(spacing: 24) {
+                    // TODO: add examples
+                }
+                
+                Divider()
+                
+                // Text fitting
+                VStack(spacing: 24) {
+                    Text("To be, or not to be, that is the question:")
+                        .frame(width: 120)
+                        .border(.black)
+                        .multilineTextAlignment(.leading)
+                    
+                    Text("To be, or not to be, that is the question:")
+                        .frame(width: 120)
+                        .border(.black)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("To be, or not to be, that is the question:")
+                        .frame(width: 120)
+                        .border(.black)
+                        .multilineTextAlignment(.trailing)
 
+                    Text("Brevity is the soul of wit.")
+                        .frame(width: 120)
+                        .border(.black)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
+                    
+                    Text("Brevity is the soul of wit.")
+                        .frame(width: 120)
+                        .border(.black)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                    
+                    Text("Brevity is the soul of wit.")
+                        .frame(width: 120)
+                        .border(.black)
+                        .lineLimit(1)
+                        .truncationMode(.head)
+                    
+                    Text("Brevity is the soul of wit.")
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.1)
+                        .frame(width: 120)
+                        .border(.black)
+                    
+                }
+                
+                Divider()
+                
+                // General Initializers (excluding localization related ones)
+                VStack(spacing: 24) {
+                    // blue text
+                    Text(attributedString)
+                    
+                    // closed range date
+                    Text(closedRangeDate)
+                    
+                    // date interval
+                    Text(dateInterval)
+                    
+                    // styled date
+                    Text(date, style: Text.DateStyle.date)
+                    
+                    // time since date
+                    Text(date, style: Text.DateStyle.offset)
+                    
+                    // relative date
+                    Text(date, style: Text.DateStyle.relative)
+                    
+                    // time componant of date
+                    Text(date, style: Text.DateStyle.time)
+                    
+                    // timer since date
+                    Text(date, style: Text.DateStyle.timer)
+                    
+                    // formatted date
+                    Text(date, format: Date.FormatStyle(date: .complete, time: .complete))
+                    
+                    // TODO: using a Formatter
+                    // https://developer.apple.com/documentation/swiftui/text/init(_:formatter:)-2he2c
+                    
+                    // TODO: from Image
+                    // https://developer.apple.com/documentation/swiftui/text/init(_:)-60ax7
+                    
+                    // countdown
+                    Text(timerInterval: closedRangeDate)
+                }
             }
-        }.navigationTitle("Text Style")
+        }.navigationTitle("Typography")
     }
 }
 
-struct TextStylePage_Previews: PreviewProvider {
-    static var previews: some View {
-        TextStylePage()
-    }
+#Preview {
+    TextTypographyPage()
 }
