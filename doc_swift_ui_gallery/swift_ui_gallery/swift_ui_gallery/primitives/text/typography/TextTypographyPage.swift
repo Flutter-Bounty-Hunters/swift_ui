@@ -1,5 +1,3 @@
-//
-
 import SwiftUI
 
 struct TextTypographyPage: View {
@@ -32,8 +30,6 @@ struct TextTypographyPage: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24)  {
-                
-                
                 
                 // General styling
                 VStack(spacing: 24) {
@@ -101,21 +97,21 @@ struct TextTypographyPage: View {
                     Text("Hello, world!")
                         .textCase(.uppercase)
                     
-                    // TODO: text scale
+                    // TODO: text scale (requires specifying iOS 17.0+)
+                    // Also, what do Scale.default and Scale.secondary even mean?
                     // Text("Hello, world!")
                     //    .textScale(.secondary)
                     
-                    // TODO: typesetting language
+                    // TODO: typesetting language (requires specifying iOS 17.0+)
                     // Text(verbatim: "แอปเปิล").typesettingLanguage(
                     //    .explicit(.init(languageCode: .thai)))
-
                     
                     Text("Emoji: 💙")
                 }
                 
                 Divider()
                 
-                // predefined font styles
+                // Predefined font styles
                 VStack(spacing: 24) {
                     Text("Large Title")
                         .font(.largeTitle)
@@ -144,7 +140,7 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
-                // system font
+                // System font
                 VStack(spacing: 24) {
                     Text("System font - 18, light, serif")
                         .font(.system(size: 18, weight: .light, design: .serif))
@@ -176,7 +172,7 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
-                // font weight
+                // Font weight
                 VStack(spacing: 24) {
                     Text("fontWeight: regular")
                         .fontWeight(.regular)
@@ -205,7 +201,7 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
-                // font design
+                // Font design
                 VStack(spacing: 24) {
                     Text("fontDesign: default")
                         .fontDesign(.default)
@@ -222,7 +218,7 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
-                // font width
+                // Font width
                 VStack(spacing: 24) {
                     Text("fontWidth: compressed")
                         .fontWidth(.compressed)
@@ -239,19 +235,11 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
-                // forground styles
+                // Forground styles
                 HStack {
                     Text("Red").foregroundStyle(.red)
                     Text("Green").foregroundStyle(.green)
                     Text("Blue").foregroundStyle(.blue)
-                }
-                
-                Divider()
-                
-                // Attributed strings
-                //
-                VStack(spacing: 24) {
-                    // TODO: add examples
                 }
                 
                 Divider()
@@ -303,31 +291,31 @@ struct TextTypographyPage: View {
                 
                 // General Initializers (excluding localization related ones)
                 VStack(spacing: 24) {
-                    // blue text
+                    // Blue text
                     Text(attributedString)
                     
-                    // closed range date
+                    // Closed range date
                     Text(closedRangeDate)
                     
-                    // date interval
+                    // Date interval
                     Text(dateInterval)
                     
-                    // styled date
+                    // Styled date
                     Text(date, style: Text.DateStyle.date)
                     
-                    // time since date
+                    // Time since date
                     Text(date, style: Text.DateStyle.offset)
                     
-                    // relative date
+                    // Relative date
                     Text(date, style: Text.DateStyle.relative)
                     
-                    // time componant of date
+                    // Time componant of date
                     Text(date, style: Text.DateStyle.time)
                     
-                    // timer since date
+                    // Timer since date
                     Text(date, style: Text.DateStyle.timer)
                     
-                    // formatted date
+                    // Formatted date
                     Text(date, format: Date.FormatStyle(date: .complete, time: .complete))
                     
                     // TODO: using a Formatter
@@ -336,7 +324,7 @@ struct TextTypographyPage: View {
                     // TODO: from Image
                     // https://developer.apple.com/documentation/swiftui/text/init(_:)-60ax7
                     
-                    // countdown
+                    // Countdown
                     Text(timerInterval: closedRangeDate)
                 }
             }
