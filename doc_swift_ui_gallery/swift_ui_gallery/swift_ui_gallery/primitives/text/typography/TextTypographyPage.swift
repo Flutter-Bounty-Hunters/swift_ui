@@ -97,14 +97,16 @@ struct TextTypographyPage: View {
                     Text("Hello, world!")
                         .textCase(.uppercase)
                     
-                    // TODO: text scale (requires specifying iOS 17.0+)
-                    // Also, what do Scale.default and Scale.secondary even mean?
-                    // Text("Hello, world!")
-                    //    .textScale(.secondary)
-                    
-                    // TODO: typesetting language (requires specifying iOS 17.0+)
-                    // Text(verbatim: "แอปเปิล").typesettingLanguage(
-                    //    .explicit(.init(languageCode: .thai)))
+                    if #available(iOS 17.0, *) {
+                        Text("default scale")
+                           .textScale(.default)
+                        
+                        Text("secondary scale")
+                           .textScale(.secondary)
+                        
+                        Text(verbatim: "แอปเปิล").typesettingLanguage(
+                           .explicit(.init(languageCode: .thai)))
+                    }
                     
                     Text("Emoji: 💙")
                 }
