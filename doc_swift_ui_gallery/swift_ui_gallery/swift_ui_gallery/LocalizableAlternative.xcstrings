@@ -1,0 +1,16 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "pencil" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lapis"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
