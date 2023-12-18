@@ -2,9 +2,43 @@ import SwiftUI
 
 struct TextTypographyPage: View {
     var attributedString: AttributedString {
-        var attributedString = AttributedString("Blue text")
-        attributedString.foregroundColor = .blue
+        var attributedString = AttributedString("Attributed string: backgroundColor, foregroundColor, baselineOffset, font, kern, tracking, strikethroughStyle, underlineStyle")
+        
+        var range = attributedString.range(of: "backgroundColor")!
+        attributedString[range].backgroundColor = .yellow
+        
+        range = attributedString.range(of: "foregroundColor")!
+        attributedString[range].foregroundColor = .blue
+        
+        range = attributedString.range(of: "baselineOffset")!
+        attributedString[range].baselineOffset = 10
+        
+        range = attributedString.range(of: "font")!
+        attributedString[range].font = UIFont(name: "Chalkduster", size: 18.0)
+        
+        range = attributedString.range(of: "kern")!
+        attributedString[range].kern = 10
+        
+        range = attributedString.range(of: "tracking")!
+        attributedString[range].tracking = -2
+        
+        range = attributedString.range(of: "strikethroughStyle")!
+        attributedString[range].strikethroughStyle = .single
+        
+        range = attributedString.range(of: "underlineStyle")!
+        attributedString[range].underlineStyle = .single
+
         return attributedString
+    }
+    
+    var markdown: AttributedString {
+        do {
+            let attributedString = try AttributedString(markdown: "**Markdown!** Please visit our [website](https://example.com)")
+            return attributedString
+        } catch {
+            print("Error parsing markdown: \(error)")
+            return AttributedString("Error")
+        }
     }
     
     var days = 5;
@@ -291,10 +325,18 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
-                // General Initializers (excluding localization related ones)
+                // Attributed strings
                 VStack(spacing: 24) {
-                    // Blue text
                     Text(attributedString)
+                    
+                    Text(markdown)
+                }
+                
+                Divider()
+                
+                // Date time initializers
+                // TODO: These are not really realated to typography. Can we move them somewhere else?
+                VStack(spacing: 24) {
                     
                     // Closed range date
                     Text(closedRangeDate)
