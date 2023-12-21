@@ -146,6 +146,7 @@
 
     },
     "Lightbulbs" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -159,6 +160,9 @@
 
     },
     "Localization" : {
+
+    },
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur, enim sit amet sodales rhoncus, nisl nisl varius urna, ut pulvinar odio nibh ac lorem. Etiam sit amet viverra erat, venenatis egestas tellus. Curabitur nec sodales lorem, nec tincidunt velit. Duis sed dolor pretium, viverra magna et, vehicula turpis. Cras suscipit venenatis felis, a dignissim nulla consequat sed. Sed non lacus nec velit vestibulum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim, ligula id condimentum feugiat, odio mi dapibus risus, quis pulvinar risus elit non ex.\nDonec vitae nisl ornare, efficitur mi vitae, maximus mauris. Curabitur imperdiet commodo tellus, vel pellentesque purus bibendum a. Nunc molestie ut nulla eu accumsan. Proin placerat metus sagittis, elementum augue vel, posuere dui. Aenean viverra enim in leo gravida, vel mollis leo vehicula. Duis aliquet convallis volutpat. Vivamus a nulla velit. Fusce vestibulum libero in cursus feugiat." : {
 
     },
     "Middle Aligned" : {
