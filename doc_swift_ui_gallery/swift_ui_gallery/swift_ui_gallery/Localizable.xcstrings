@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "_NOW visit our [website](https://www.example.com)._" : {
+      "comment" : "no comment",
+      "extractionState" : "stale",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "test??"
+          }
+        }
+      }
+    },
     "_Please visit our [website](https://www.example.com)._" : {
       "localizations" : {
         "it" : {
@@ -13,6 +25,22 @@
     },
     "Accessibility" : {
 
+    },
+    "Add ^[%lld %@ %@](inflect: true) to your order" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add ^[%1$lld %2$@ %3$@](inflect: true) to your order"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi ^[%1$lld %2$@ %3$@](inflect: true) al tuo ordine"
+          }
+        }
+      }
     },
     "All styles" : {
 
@@ -139,6 +167,16 @@
     "Image" : {
 
     },
+    "large" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "grande"
+          }
+        }
+      }
+    },
     "Large Title" : {
 
     },
@@ -162,13 +200,22 @@
     "Localization" : {
 
     },
+    "Localize" : {
+
+    },
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur, enim sit amet sodales rhoncus, nisl nisl varius urna, ut pulvinar odio nibh ac lorem. Etiam sit amet viverra erat, venenatis egestas tellus. Curabitur nec sodales lorem, nec tincidunt velit. Duis sed dolor pretium, viverra magna et, vehicula turpis. Cras suscipit venenatis felis, a dignissim nulla consequat sed. Sed non lacus nec velit vestibulum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim, ligula id condimentum feugiat, odio mi dapibus risus, quis pulvinar risus elit non ex.\nDonec vitae nisl ornare, efficitur mi vitae, maximus mauris. Curabitur imperdiet commodo tellus, vel pellentesque purus bibendum a. Nunc molestie ut nulla eu accumsan. Proin placerat metus sagittis, elementum augue vel, posuere dui. Aenean viverra enim in leo gravida, vel mollis leo vehicula. Duis aliquet convallis volutpat. Vivamus a nulla velit. Fusce vestibulum libero in cursus feugiat." : {
+
+    },
+    "Magic" : {
 
     },
     "Middle Aligned" : {
 
     },
     "Motion" : {
+
+    },
+    "Other initializers" : {
 
     },
     "pen" : {
@@ -197,6 +244,16 @@
     },
     "Red" : {
 
+    },
+    "salad" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "insalata"
+          }
+        }
+      }
     },
     "Scaffolds" : {
 
@@ -241,6 +298,9 @@
 
     },
     "Text" : {
+
+    },
+    "Text initialization from string + localization table specification" : {
 
     },
     "Third" : {

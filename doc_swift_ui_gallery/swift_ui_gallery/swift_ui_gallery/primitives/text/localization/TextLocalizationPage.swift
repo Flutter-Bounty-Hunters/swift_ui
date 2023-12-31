@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct TextLocalizationPage: View {
-    @State private var localize = false
+    @State private var localize: Bool
+
+    init(localize: Bool = false) {
+        _localize = State(initialValue: localize)
+    }
     
     var body: some View {
         Toggle(isOn: $localize, label: {
@@ -33,7 +37,7 @@ struct TextLocalizationPage: View {
                 // This comment will be ignored, since the same key was declared earlier. This is valid even if no comment was specified on the previous key.
                 Text("another pencil", comment: "A different comment")
                 
-                // Specify a different table for this localization, this must be the name of an existing string catalog. If the table is not found, the string will not be localized
+                // Specify a different table for this localization, this must be the name of an existing string catalog. If the table is not found, the string will not be localized.
                 Text("pencil", tableName: "LocalizableAlternative")
                 
                 // Specify a bundle that contains the localizations table (Bundle.main is the default)
@@ -57,9 +61,24 @@ struct TextLocalizationPage: View {
                 let resource = LocalizedStringResource("pencil")
                 Text(resource)
                 
+                // String initializer
+                let string = String(localized: "pencil")
+                Text(LocalizedStringKey(string))
+                
+                // AttributedString initializer
+                // Warning: At present, localized AttributedString can only be displayed in the language currently set in the system and cannot be specified as a specific language. Run with the "swift_ui_gallery it" scheme to see it working
+                let attributed = AttributedString(localized: "pencil")
+                Text(attributed)
+                
                 Divider()
                 
-                // TODO add AttributedString examples
+                Text("Automatic grammar agreement").font(.title2)
+                
+                // for supported languages, adding the `inflect: true` attribute automatically changes the localized strings to agree with amounts and genders.
+                let quantity = 2
+                let size = LocalizedStringResource("large")
+                let food = LocalizedStringResource("salad")
+                Text("Add ^[\(quantity) \(size) \(food)](inflect: true) to your order")
             }
         }.navigationTitle("Localization")
             .environment(\.locale, $localize.wrappedValue ? .init(identifier: "it") : .current)
@@ -71,5 +90,5 @@ struct TextLocalizationPage: View {
 }
 
 #Preview("Italian") {
-    TextLocalizationPage().environment(\.locale, .init(identifier: "it"))
+    TextLocalizationPage(localize: true)
 }
