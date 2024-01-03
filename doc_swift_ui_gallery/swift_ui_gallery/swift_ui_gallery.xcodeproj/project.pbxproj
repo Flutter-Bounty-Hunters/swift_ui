@@ -11,6 +11,8 @@
 		7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */; };
 		7179CF872B26DF0E00C5927B /* TextLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */; };
 		719116892B216D500007C4DE /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719116882B216D500007C4DE /* TextPage.swift */; };
+		B3CBD1552B2E18320095DE1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */; };
+		B3CBD1572B2E1BE20095DE1F /* LocalizableAlternative.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */; };
 		C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902DDE42AE38C8A00242DBA /* VStackExamples.swift */; };
 		C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902DDE62AE3904400242DBA /* TodoPage.swift */; };
 		C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAE2802AC23AB40042DBC7 /* swift_ui_galleryApp.swift */; };
@@ -50,6 +52,8 @@
 		7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAccessibilityPage.swift; sourceTree = "<group>"; };
 		7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLocalizationPage.swift; sourceTree = "<group>"; };
 		719116882B216D500007C4DE /* TextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
+		B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizableAlternative.xcstrings; sourceTree = "<group>"; };
 		C902DDE42AE38C8A00242DBA /* VStackExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackExamples.swift; sourceTree = "<group>"; };
 		C902DDE62AE3904400242DBA /* TodoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoPage.swift; sourceTree = "<group>"; };
 		C9CAE27D2AC23AB40042DBC7 /* swift_ui_gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_ui_gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +157,8 @@
 		C9CAE27F2AC23AB40042DBC7 /* swift_ui_gallery */ = {
 			isa = PBXGroup;
 			children = (
+				B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */,
+				B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */,
 				C9CAE2B92AE108790042DBC7 /* layouts */,
 				C9CAE2B82AE107E10042DBC7 /* motion */,
 				C9CAE2B72AE107DB0042DBC7 /* controls */,
@@ -329,6 +335,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = C9CAE2742AC23AB40042DBC7;
 			productRefGroup = C9CAE27E2AC23AB40042DBC7 /* Products */;
@@ -347,8 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CBD1572B2E1BE20095DE1F /* LocalizableAlternative.xcstrings in Resources */,
 				C9CAE2882AC23AB50042DBC7 /* Preview Assets.xcassets in Resources */,
 				C9CAE2852AC23AB50042DBC7 /* Assets.xcassets in Resources */,
+				B3CBD1552B2E18320095DE1F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swift_ui_gallery/Preview Content\"";
+				DEVELOPMENT_TEAM = N7KJW4K2G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -573,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swift_ui_gallery/Preview Content\"";
+				DEVELOPMENT_TEAM = N7KJW4K2G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
