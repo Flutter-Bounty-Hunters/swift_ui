@@ -296,6 +296,22 @@ struct TextTypographyPage: View {
                 
                 Divider()
                 
+                Text("background color\nhello")
+                    .padding()
+                    .background(.yellow)
+                Text("background gradient\nhello").background(.linearGradient(
+                    colors: [.red, .blue],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                ))
+                Text("background color\nhello")
+                    .background(.yellow)
+                    .padding()
+                Text(attributedString)
+                    .background(.green)
+                
+                Divider()
+                
                 Text("largeTitle").font(.largeTitle)
                 Text("title").font(.title)
                 Text("title2").font(.title2)
