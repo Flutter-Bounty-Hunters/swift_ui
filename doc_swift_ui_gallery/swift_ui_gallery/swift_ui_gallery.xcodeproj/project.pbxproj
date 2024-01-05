@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7179CF832B26DEB900C5927B /* TextTypographyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF822B26DEB900C5927B /* TextTypographyPage.swift */; };
+		71031FDF2B32809200176435 /* TextTypographyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71031FDE2B32809200176435 /* TextTypographyPage.swift */; };
 		7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */; };
 		7179CF872B26DF0E00C5927B /* TextLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */; };
 		719116892B216D500007C4DE /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719116882B216D500007C4DE /* TextPage.swift */; };
@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7179CF822B26DEB900C5927B /* TextTypographyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTypographyPage.swift; sourceTree = "<group>"; };
+		71031FDE2B32809200176435 /* TextTypographyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTypographyPage.swift; sourceTree = "<group>"; };
 		7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAccessibilityPage.swift; sourceTree = "<group>"; };
 		7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLocalizationPage.swift; sourceTree = "<group>"; };
 		719116882B216D500007C4DE /* TextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		7179CF882B26E2E900C5927B /* typography */ = {
 			isa = PBXGroup;
 			children = (
-				7179CF822B26DEB900C5927B /* TextTypographyPage.swift */,
+				71031FDE2B32809200176435 /* TextTypographyPage.swift */,
 			);
 			path = typography;
 			sourceTree = "<group>";
@@ -386,11 +386,11 @@
 				C9CAE2AD2AE106420042DBC7 /* CollectionsPage.swift in Sources */,
 				719116892B216D500007C4DE /* TextPage.swift in Sources */,
 				7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */,
-				7179CF832B26DEB900C5927B /* TextTypographyPage.swift in Sources */,
 				C9CAE2832AC23AB40042DBC7 /* ContentView.swift in Sources */,
 				C9CAE2BB2AE1089A0042DBC7 /* LayoutsPage.swift in Sources */,
 				C9CAE2B12AE1065F0042DBC7 /* ControlsPage.swift in Sources */,
 				C9CAE2AB2ADFB1480042DBC7 /* PrimitivesPage.swift in Sources */,
+				71031FDF2B32809200176435 /* TextTypographyPage.swift in Sources */,
 				C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */,
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
 				C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */,
