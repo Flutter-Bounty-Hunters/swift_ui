@@ -23,6 +23,15 @@
         }
       }
     },
+    "/home/user/documents/photos/2024/vacation/destination/" : {
+
+    },
+    "125" : {
+
+    },
+    "Access Rotor by two-finger rotation. Select Headings in the Rotor.  Jump directly to the next or previous heading with swipe down and swipe up, respectively." : {
+
+    },
     "Accessibility" : {
 
     },
@@ -56,6 +65,15 @@
         }
       }
     },
+    "APPL" : {
+
+    },
+    "Apples (h2)" : {
+
+    },
+    "Automatic grammar agreement" : {
+
+    },
     "Blue" : {
 
     },
@@ -71,16 +89,40 @@
     "Collections" : {
 
     },
+    "Concorde (h3)" : {
+
+    },
+    "console text content type" : {
+
+    },
     "Controls" : {
+
+    },
+    "Default punctuation: All the world's a stage, And all the men and women merely players;" : {
 
     },
     "default scale" : {
 
     },
+    "Default Spell out characters" : {
+
+    },
+    "Do not spell out characters" : {
+
+    },
+    "Does not include punctuation: All the world's a stage, And all the men and women merely players;" : {
+
+    },
     "Emoji: 💙" : {
 
     },
+    "Etiam viverra eleifend elit ullamcorper aliquet. Nam sollicitudin lectus nisl, finibus volutpat augue posuere quis." : {
+
+    },
     "Exceeds available space" : {
+
+    },
+    "file system text content type" : {
 
     },
     "First" : {
@@ -140,10 +182,40 @@
     "Frame" : {
 
     },
+    "Fruits (h1)" : {
+
+    },
+    "Golden Delicious (h3)" : {
+
+    },
     "Green" : {
 
     },
+    "Green Anjou (h3)" : {
+
+    },
     "Grid" : {
+
+    },
+    "Heading h1" : {
+
+    },
+    "Heading h2" : {
+
+    },
+    "Heading h3" : {
+
+    },
+    "Heading h4" : {
+
+    },
+    "Heading h5" : {
+
+    },
+    "Heading h6" : {
+
+    },
+    "Heading unspecified" : {
 
     },
     "Headline" : {
@@ -152,19 +224,25 @@
     "Hello" : {
 
     },
-    "Hello world" : {
-
-    },
     "Hello, 12345!" : {
 
     },
     "Hello, world!" : {
 
     },
+    "Honeycrisp (h3)" : {
+
+    },
     "HStack" : {
 
     },
+    "If the text has an accessibility label, only the accessibility label is spoken by VoiceOver, the text itself is skipped." : {
+
+    },
     "Image" : {
+
+    },
+    "Includes punctuation: All the world's a stage, And all the men and women merely players;" : {
 
     },
     "large" : {
@@ -206,7 +284,13 @@
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur, enim sit amet sodales rhoncus, nisl nisl varius urna, ut pulvinar odio nibh ac lorem. Etiam sit amet viverra erat, venenatis egestas tellus. Curabitur nec sodales lorem, nec tincidunt velit. Duis sed dolor pretium, viverra magna et, vehicula turpis. Cras suscipit venenatis felis, a dignissim nulla consequat sed. Sed non lacus nec velit vestibulum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim, ligula id condimentum feugiat, odio mi dapibus risus, quis pulvinar risus elit non ex.\nDonec vitae nisl ornare, efficitur mi vitae, maximus mauris. Curabitur imperdiet commodo tellus, vel pellentesque purus bibendum a. Nunc molestie ut nulla eu accumsan. Proin placerat metus sagittis, elementum augue vel, posuere dui. Aenean viverra enim in leo gravida, vel mollis leo vehicula. Duis aliquet convallis volutpat. Vivamus a nulla velit. Fusce vestibulum libero in cursus feugiat." : {
 
     },
-    "Magic" : {
+    "Lowered pitch" : {
+
+    },
+    "McIntosh (h3)" : {
+
+    },
+    "messaging text content type" : {
 
     },
     "Middle Aligned" : {
@@ -215,7 +299,16 @@
     "Motion" : {
 
     },
+    "narrative text content type" : {
+
+    },
+    "Normal pitch" : {
+
+    },
     "Other initializers" : {
+
+    },
+    "Pears (h2)" : {
 
     },
     "pen" : {
@@ -239,10 +332,19 @@
         }
       }
     },
+    "plain text content type" : {
+
+    },
     "Primitives" : {
 
     },
+    "Raised pitch" : {
+
+    },
     "Red" : {
+
+    },
+    "Red Bartlett (h3)" : {
 
     },
     "salad" : {
@@ -262,6 +364,24 @@
 
     },
     "secondary scale" : {
+
+    },
+    "Slightly lowered pitch" : {
+
+    },
+    "Slightly raised pitch" : {
+
+    },
+    "source code content type" : {
+
+    },
+    "Speech announcement is not queued" : {
+
+    },
+    "Speech announcement is queued" : {
+
+    },
+    "Spell out characters" : {
 
     },
     "Subheadline" : {
@@ -303,6 +423,9 @@
     "Text initialization from string + localization table specification" : {
 
     },
+    "Text with accessibility label" : {
+
+    },
     "Third" : {
 
     },
@@ -321,6 +444,9 @@
     "To be, or not to be, that is the question:" : {
 
     },
+    "To test the app with VoiceOver, open Settings, Accessibility, VoiceOver." : {
+
+    },
     "Top Aligned" : {
 
     },
@@ -333,7 +459,19 @@
     "UX divisions" : {
 
     },
+    "void main(List<String> arguments) { print('Default punctuation'); }" : {
+
+    },
+    "void main(List<String> arguments) { print('Do not include punctuation'); }" : {
+
+    },
+    "void main(List<String> arguments) { print('Include punctuation'); }" : {
+
+    },
     "VStack" : {
+
+    },
+    "word processing text content type" : {
 
     },
     "ZStack" : {
