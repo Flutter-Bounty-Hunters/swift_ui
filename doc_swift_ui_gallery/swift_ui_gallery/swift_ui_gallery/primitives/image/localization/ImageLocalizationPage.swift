@@ -18,7 +18,7 @@ struct ImageLocalizationPage: View {
                     .resizable()
                     .scaledToFit()
                 
-                // If there is no image specified for the current locale, the default one isued, if provided.
+                // If there is no image specified for the current locale, the default one is used, if provided.
                 Image("Dash_hello")
                     .resizable()
                     .scaledToFit()
