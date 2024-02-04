@@ -54,6 +54,9 @@
     "All styles" : {
 
     },
+    "AngularGradient" : {
+
+    },
     "another pencil" : {
       "comment" : "Translator comment",
       "localizations" : {
@@ -71,10 +74,34 @@
     "Apples (h2)" : {
 
     },
+    "Arial" : {
+
+    },
     "Automatic grammar agreement" : {
 
     },
-    "Blue" : {
+    "background color" : {
+
+    },
+    "background color\nhello" : {
+
+    },
+    "background gradient" : {
+
+    },
+    "background gradient\nhello" : {
+
+    },
+    "black" : {
+
+    },
+    "blue" : {
+
+    },
+    "body" : {
+
+    },
+    "bold" : {
 
     },
     "Bottom Aligned" : {
@@ -83,13 +110,37 @@
     "Brevity is the soul of wit." : {
 
     },
-    "Callout" : {
+    "brown" : {
+
+    },
+    "callout" : {
+
+    },
+    "caption" : {
+
+    },
+    "caption2" : {
+
+    },
+    "Chalkduster" : {
+
+    },
+    "clear" : {
 
     },
     "Collections" : {
 
     },
+    "compressed" : {
+
+    },
     "Concorde (h3)" : {
+
+    },
+    "condensed" : {
+
+    },
+    "conicGradient" : {
 
     },
     "console text content type" : {
@@ -98,10 +149,22 @@
     "Controls" : {
 
     },
-    "Default punctuation: All the world's a stage, And all the men and women merely players;" : {
+    "cyan" : {
 
     },
-    "default scale" : {
+    "dash" : {
+
+    },
+    "dashDot" : {
+
+    },
+    "dashDotDot" : {
+
+    },
+    "default" : {
+
+    },
+    "Default punctuation: All the world's a stage, And all the men and women merely players;" : {
 
     },
     "Default Spell out characters" : {
@@ -113,7 +176,10 @@
     "Does not include punctuation: All the world's a stage, And all the men and women merely players;" : {
 
     },
-    "Emoji: 💙" : {
+    "dot" : {
+
+    },
+    "ellipticalGradient" : {
 
     },
     "Etiam viverra eleifend elit ullamcorper aliquet. Nam sollicitudin lectus nisl, finibus volutpat augue posuere quis." : {
@@ -122,61 +188,19 @@
     "Exceeds available space" : {
 
     },
+    "expanded" : {
+
+    },
     "file system text content type" : {
 
     },
     "First" : {
 
     },
-    "fontDesign: default" : {
+    "flight" : {
 
     },
-    "fontDesign: monospaced" : {
-
-    },
-    "fontDesign: rounded" : {
-
-    },
-    "fontDesign: serif" : {
-
-    },
-    "fontWeight: black" : {
-
-    },
-    "fontWeight: bold" : {
-
-    },
-    "fontWeight: heavy" : {
-
-    },
-    "fontWeight: light" : {
-
-    },
-    "fontWeight: medium" : {
-
-    },
-    "fontWeight: regular" : {
-
-    },
-    "fontWeight: semibold" : {
-
-    },
-    "fontWeight: ultraLight" : {
-
-    },
-    "fontWidth: compressed" : {
-
-    },
-    "fontWidth: condensed" : {
-
-    },
-    "fontWidth: expanded" : {
-
-    },
-    "fontWidth: standard" : {
-
-    },
-    "Footnote" : {
+    "footnote" : {
 
     },
     "Frame" : {
@@ -188,7 +212,10 @@
     "Golden Delicious (h3)" : {
 
     },
-    "Green" : {
+    "gray" : {
+
+    },
+    "green" : {
 
     },
     "Green Anjou (h3)" : {
@@ -218,16 +245,13 @@
     "Heading unspecified" : {
 
     },
-    "Headline" : {
+    "headline" : {
 
     },
-    "Hello" : {
+    "heavy" : {
 
     },
-    "Hello, 12345!" : {
-
-    },
-    "Hello, world!" : {
+    "higher" : {
 
     },
     "Honeycrisp (h3)" : {
@@ -245,6 +269,15 @@
     "Includes punctuation: All the world's a stage, And all the men and women merely players;" : {
 
     },
+    "indigo" : {
+
+    },
+    "italic" : {
+
+    },
+    "kerning" : {
+
+    },
     "large" : {
       "localizations" : {
         "it" : {
@@ -255,10 +288,13 @@
         }
       }
     },
-    "Large Title" : {
+    "largeTitle" : {
 
     },
     "Layouts" : {
+
+    },
+    "light" : {
 
     },
     "Lightbulbs" : {
@@ -272,6 +308,9 @@
         }
       }
     },
+    "linearGradient" : {
+
+    },
     "Lists" : {
 
     },
@@ -284,10 +323,16 @@
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur, enim sit amet sodales rhoncus, nisl nisl varius urna, ut pulvinar odio nibh ac lorem. Etiam sit amet viverra erat, venenatis egestas tellus. Curabitur nec sodales lorem, nec tincidunt velit. Duis sed dolor pretium, viverra magna et, vehicula turpis. Cras suscipit venenatis felis, a dignissim nulla consequat sed. Sed non lacus nec velit vestibulum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim, ligula id condimentum feugiat, odio mi dapibus risus, quis pulvinar risus elit non ex.\nDonec vitae nisl ornare, efficitur mi vitae, maximus mauris. Curabitur imperdiet commodo tellus, vel pellentesque purus bibendum a. Nunc molestie ut nulla eu accumsan. Proin placerat metus sagittis, elementum augue vel, posuere dui. Aenean viverra enim in leo gravida, vel mollis leo vehicula. Duis aliquet convallis volutpat. Vivamus a nulla velit. Fusce vestibulum libero in cursus feugiat." : {
 
     },
+    "lower" : {
+
+    },
     "Lowered pitch" : {
 
     },
     "McIntosh (h3)" : {
+
+    },
+    "medium" : {
 
     },
     "messaging text content type" : {
@@ -296,16 +341,34 @@
     "Middle Aligned" : {
 
     },
+    "mint" : {
+
+    },
+    "monospaced" : {
+
+    },
+    "monospacedDigit 123" : {
+
+    },
     "Motion" : {
 
     },
     "narrative text content type" : {
 
     },
+    "normal" : {
+
+    },
     "Normal pitch" : {
 
     },
+    "orange" : {
+
+    },
     "Other initializers" : {
+
+    },
+    "Party LET" : {
 
     },
     "Pears (h2)" : {
@@ -332,19 +395,37 @@
         }
       }
     },
+    "pink" : {
+
+    },
     "plain text content type" : {
 
     },
     "Primitives" : {
 
     },
+    "purple" : {
+
+    },
+    "RadialGradient" : {
+
+    },
     "Raised pitch" : {
 
     },
-    "Red" : {
+    "red" : {
 
     },
     "Red Bartlett (h3)" : {
+
+    },
+    "regular" : {
+
+    },
+    "regularMaterial" : {
+
+    },
+    "rounded" : {
 
     },
     "salad" : {
@@ -360,16 +441,223 @@
     "Scaffolds" : {
 
     },
+    "ScaledMetric: %lf" : {
+
+    },
     "Second" : {
 
     },
-    "secondary scale" : {
+    "secondary" : {
+
+    },
+    "semibold" : {
+
+    },
+    "serif" : {
+
+    },
+    "size 6" : {
+
+    },
+    "size 7" : {
+
+    },
+    "size 8" : {
+
+    },
+    "size 9" : {
+
+    },
+    "size 10" : {
+
+    },
+    "size 11" : {
+
+    },
+    "size 12" : {
+
+    },
+    "size 13" : {
+
+    },
+    "size 14" : {
+
+    },
+    "size 15" : {
+
+    },
+    "size 16" : {
+
+    },
+    "size 17" : {
+
+    },
+    "size 18" : {
+
+    },
+    "size 19" : {
+
+    },
+    "size 20" : {
+
+    },
+    "size 21" : {
+
+    },
+    "size 22" : {
+
+    },
+    "size 23" : {
+
+    },
+    "size 24" : {
+
+    },
+    "size 25" : {
+
+    },
+    "size 26" : {
+
+    },
+    "size 27" : {
+
+    },
+    "size 28" : {
+
+    },
+    "size 29" : {
+
+    },
+    "size 30" : {
+
+    },
+    "size 31" : {
+
+    },
+    "size 32" : {
+
+    },
+    "size 33" : {
+
+    },
+    "size 34" : {
+
+    },
+    "size 35" : {
+
+    },
+    "size 36" : {
+
+    },
+    "size 37" : {
+
+    },
+    "size 38" : {
+
+    },
+    "size 39" : {
+
+    },
+    "size 40" : {
+
+    },
+    "size 41" : {
+
+    },
+    "size 42" : {
+
+    },
+    "size 43" : {
+
+    },
+    "size 44" : {
+
+    },
+    "size 45" : {
+
+    },
+    "size 46" : {
+
+    },
+    "size 47" : {
+
+    },
+    "size 48" : {
+
+    },
+    "size 49" : {
+
+    },
+    "size 50" : {
+
+    },
+    "size 51" : {
+
+    },
+    "size 52" : {
+
+    },
+    "size 53" : {
+
+    },
+    "size 54" : {
+
+    },
+    "size 56" : {
+
+    },
+    "size 58" : {
+
+    },
+    "size 60" : {
+
+    },
+    "size 62" : {
+
+    },
+    "size 64" : {
+
+    },
+    "size 66" : {
+
+    },
+    "size 68" : {
+
+    },
+    "size 70" : {
+
+    },
+    "size 72" : {
+
+    },
+    "size 76" : {
+
+    },
+    "size 80" : {
+
+    },
+    "size 84" : {
+
+    },
+    "size 88" : {
+
+    },
+    "size 92" : {
+
+    },
+    "size 96" : {
 
     },
     "Slightly lowered pitch" : {
 
     },
     "Slightly raised pitch" : {
+
+    },
+    "Snell Roundhand" : {
+
+    },
+    "solid" : {
 
     },
     "source code content type" : {
@@ -384,37 +672,19 @@
     "Spell out characters" : {
 
     },
-    "Subheadline" : {
+    "standard" : {
 
     },
-    "System font - 18, black, monospace" : {
+    "strikethrough" : {
 
     },
-    "System font - 18, black, rounded" : {
-
-    },
-    "System font - 18, black, serif" : {
-
-    },
-    "System font - 18, light, monospace" : {
-
-    },
-    "System font - 18, light, rounded" : {
-
-    },
-    "System font - 18, light, serif" : {
-
-    },
-    "System font - 18, medium, monospace" : {
-
-    },
-    "System font - 18, medium, rounded" : {
-
-    },
-    "System font - 18, medium, serif" : {
+    "subheadline" : {
 
     },
     "Tables" : {
+
+    },
+    "teal" : {
 
     },
     "Text" : {
@@ -426,22 +696,37 @@
     "Text with accessibility label" : {
 
     },
+    "textCase lowercase" : {
+
+    },
+    "textCase uppercase" : {
+
+    },
+    "thickMaterial" : {
+
+    },
+    "thin" : {
+
+    },
+    "thinMaterial" : {
+
+    },
     "Third" : {
 
     },
     "This page still needs to be spec'd and built. Wanna hepl?" : {
 
     },
-    "Title" : {
+    "title" : {
 
     },
-    "Title 2" : {
+    "title2" : {
 
     },
-    "Title 3" : {
+    "title3" : {
 
     },
-    "To be, or not to be, that is the question:" : {
+    "To be, or not to be, that is the question." : {
 
     },
     "To test the app with VoiceOver, open Settings, Accessibility, VoiceOver." : {
@@ -450,13 +735,31 @@
     "Top Aligned" : {
 
     },
+    "tracking" : {
+
+    },
     "Typography" : {
 
     },
     "UI Primitives" : {
 
     },
+    "ultraLight" : {
+
+    },
+    "ultraThickMaterial" : {
+
+    },
+    "ultraThinMaterial" : {
+
+    },
+    "underline" : {
+
+    },
     "UX divisions" : {
+
+    },
+    "VA" : {
 
     },
     "void main(List<String> arguments) { print('Default punctuation'); }" : {
@@ -471,10 +774,19 @@
     "VStack" : {
 
     },
+    "white" : {
+
+    },
     "word processing text content type" : {
 
     },
+    "Zapfino" : {
+
+    },
     "ZStack" : {
+
+    },
+    "هذا سطر طويل من النص" : {
 
     }
   },

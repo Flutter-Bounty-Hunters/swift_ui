@@ -24,6 +24,12 @@ struct PrimitivesPage: View {
                     TodoLink(label: "Shape Clipped")
                     
                     TodoLink(label: "From Network")
+
+                    NavigationLink {
+                        ImageLocalizationPage()
+                    } label: {
+                        Text("Localization")
+                    }
                 } header: {
                     Text("Image")
                 }
