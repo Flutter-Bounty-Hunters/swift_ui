@@ -13,6 +13,15 @@ struct TextAccessibilityPage: View {
 
                 Divider()
 
+                Text("Switch to Italian to test accessibility localization. The texts below have an accessibility label added.")
+                // https://developer.apple.com/documentation/swiftui/localizedstringkey
+                let pencil = "pencil"
+                Text("This will announce \"pencil\" without translation because the accessibility label is a string variable.").accessibilityLabel(pencil)
+                Text("This will announce \"pencil\" translated to Italian because the string variable is passed to LocalizedStringKey which forces localization.").accessibilityLabel(LocalizedStringKey(pencil))
+                Text("This will announce \"pencil\" translated to Italian because string literals are automatically translated.").accessibilityLabel("pencil")
+
+                Divider()
+
                 Text("Lowered pitch").speechAdjustedPitch(-1.0)
                 Text("Slightly lowered pitch").speechAdjustedPitch(-0.3)
                 Text("Normal pitch").speechAdjustedPitch(0)

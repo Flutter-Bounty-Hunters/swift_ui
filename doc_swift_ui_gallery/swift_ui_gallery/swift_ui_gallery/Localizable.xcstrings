@@ -681,6 +681,9 @@
     "subheadline" : {
 
     },
+    "Switch to Italian to test accessibility localization. The texts below have an accessibility label added." : {
+
+    },
     "Tables" : {
 
     },
@@ -715,6 +718,15 @@
 
     },
     "This page still needs to be spec'd and built. Wanna hepl?" : {
+
+    },
+    "This will announce \"pencil\" translated to Italian because string literals are automatically translated." : {
+
+    },
+    "This will announce \"pencil\" translated to Italian because the string variable is passed to LocalizedStringKey which forces localization." : {
+
+    },
+    "This will announce \"pencil\" without translation because the accessibility label is a string variable." : {
 
     },
     "title" : {
