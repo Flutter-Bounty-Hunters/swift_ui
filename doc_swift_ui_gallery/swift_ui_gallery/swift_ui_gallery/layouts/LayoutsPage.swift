@@ -23,6 +23,18 @@ struct LayoutsPage: View {
                         Text("Bottom Aligned")
                     }
                     
+                    NavigationLink{
+                        VStackContentAlignment()
+                    } label: {
+                        Text("Content Alignment")
+                    }
+                    
+                    NavigationLink{
+                        VStackContentSpacing()
+                    } label: {
+                        Text("Content Spacing")
+                    }
+                    
                     NavigationLink {
                         VStackExceedsAvailableSpaceAlignedPage()
                     } label: {
