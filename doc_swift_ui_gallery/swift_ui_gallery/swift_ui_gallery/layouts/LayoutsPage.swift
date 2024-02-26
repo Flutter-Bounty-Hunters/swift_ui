@@ -24,22 +24,29 @@ struct LayoutsPage: View {
                     }
                     
                     NavigationLink{
-                        VStackContentAlignment()
+                        VStackContentAlignmentPage()
                     } label: {
                         Text("Content Alignment")
                     }
                     
                     NavigationLink{
-                        VStackContentSpacing()
+                        VStackContentSpacingPage()
                     } label: {
                         Text("Content Spacing")
                     }
                     
                     NavigationLink {
-                        VStackExceedsAvailableSpaceAlignedPage()
+                        VStackExceedsAvailableSpacePage()
                     } label: {
-                        Text("Exceeds available space")
+                        Text("VStack Exceeds available space")
                     }
+                    
+                    NavigationLink{
+                        LazyVStackExceedsAvailableSpacePage()
+                    } label: {
+                        Text("LazyVStack Exceeds available space")
+                    }
+                    
                 } header: {
                     Text("VStack")
                 }
