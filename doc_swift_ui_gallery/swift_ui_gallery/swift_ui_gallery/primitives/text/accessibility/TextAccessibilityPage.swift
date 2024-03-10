@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct TextAccessibilityPage: View {
+    @State private var localize: Bool
+
+    init(localize: Bool = false) {
+        _localize = State(initialValue: localize)
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
@@ -12,8 +18,12 @@ struct TextAccessibilityPage: View {
                 Text("Text with accessibility label").accessibilityLabel("If the text has an accessibility label, only the accessibility label is spoken by VoiceOver, the text itself is skipped.")
 
                 Divider()
-
                 Text("Switch to Italian to test accessibility localization. The texts below have an accessibility label added.")
+
+                Toggle(isOn: $localize, label: {
+                    Text("Localize")
+                })
+
                 // https://developer.apple.com/documentation/swiftui/localizedstringkey
                 let pencil = "pencil"
                 Text("This will announce \"pencil\" without translation because the accessibility label is a string variable.").accessibilityLabel(pencil)
@@ -116,9 +126,14 @@ struct TextAccessibilityPage: View {
                 Divider()
             }.padding(.horizontal, 12)
         }.navigationTitle("Accessibility")
+            .environment(\.locale, $localize.wrappedValue ? .init(identifier: "it") : .current)
     }
 }
 
 #Preview {
     TextAccessibilityPage()
+}
+
+#Preview("Italian") {
+    TextAccessibilityPage(localize: true)
 }
