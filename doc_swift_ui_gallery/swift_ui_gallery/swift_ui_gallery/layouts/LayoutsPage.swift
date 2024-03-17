@@ -24,9 +24,21 @@ struct LayoutsPage: View {
                     }
                     
                     NavigationLink{
-                        VStackContentAlignmentPage()
+                        VStackContentLeftAlignedPage()
                     } label: {
-                        Text("Content Alignment")
+                        Text("Content Left Aligned")
+                    }
+                    
+                    NavigationLink{
+                        VStackContentCenterAlignedPage()
+                    } label: {
+                        Text("Content Center Aligned")
+                    }
+                    
+                    NavigationLink{
+                        VStackContentRightAlignedPage()
+                    } label: {
+                        Text("Content Right Aligned")
                     }
                     
                     NavigationLink{
