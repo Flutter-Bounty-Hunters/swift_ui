@@ -64,19 +64,118 @@ struct LayoutsPage: View {
                 }
                 
                 Section() {
-                    TodoLink(label: "Left Aligned")
+                    NavigationLink {
+                        HStackLeftAlignedPage()
+                    } label: {
+                        Text("Left Aligned")
+                    }
+                    NavigationLink {
+                        HStackCenterAlignedPage()
+                    } label: {
+                        Text("Center Aligned")
+                    }
                     
-                    TodoLink(label: "Center Aligned")
+                    NavigationLink {
+                        HStackRightAlignedPage()
+                    } label: {
+                        Text("Right Aligned")
+                    }
                     
-                    TodoLink(label: "Right Aligned")
+                    NavigationLink {
+                        HStackContentTopAlignedPage()
+                    } label: {
+                        Text("Content Top Aligned")
+                    }
                     
-                    TodoLink(label: "Exceeds available space")
+                    NavigationLink {
+                        HStackContentCenterAlignedPage()
+                    } label: {
+                        Text("Content Center Aligned")
+                    }
+                    
+                    NavigationLink {
+                        HStackContentBottomAlignedPage()
+                    } label: {
+                        Text("Content Bottom Aligned")
+                    }
+                    
+                    NavigationLink {
+                        HStackContentFirstTextBaselineAlignedPage()
+                    } label: {
+                        Text("Content First Text Baseline Aligned")
+                    }
+                    
+                    NavigationLink {
+                        HStackContentLastTextBaselineAlignedPage()
+                    } label: {
+                        Text("Content Last Text Baseline Aligned")
+                    }
+                    
+                    NavigationLink {
+                        HStackExceedsAvailableSpacePage()
+                    } label: {
+                        Text("HStack Exceeds available space")
+                    }
+                    
+                    NavigationLink {
+                        LazyHStackExceedsAvailableSpacePage()
+                    } label: {
+                        Text("Lazy HStack Exceeds available space")
+                    }
                 } header: {
                     Text("HStack")
                 }
                 
                 Section() {
-                    TodoLink(label: "Example")
+                    NavigationLink {
+                        ZStackDemo()
+                    } label: {
+                        Text("ZStack Demo")
+                    }
+                    
+                    NavigationLink {
+                        ZStackTopAlignment()
+                    } label: {
+                        Text("ZStack Top Alignment")
+                    }
+                    
+                    NavigationLink {
+                        ZStackTopLeadingAlignment()
+                    } label: {
+                        Text("ZStack Top Leading Alignment")
+                    }
+                    
+                    NavigationLink {
+                        ZStackTopTrailingAlignment()
+                    } label: {
+                        Text("ZStack Top Trailing Alignment")
+                    }
+                    
+                    NavigationLink {
+                        ZStackCenterAlignment()
+                    } label: {
+                        Text("ZStack Center Alignment")
+                    }
+                    
+                    
+                    NavigationLink {
+                        ZStackBottomAlignment()
+                    } label: {
+                        Text("ZStack Bottom Alignment")
+                    }
+                    
+                    NavigationLink {
+                        ZStackBottomLeadingAlignment()
+                    } label: {
+                        Text("ZStack Bottom Leading Alignment")
+                    }
+                    
+                    NavigationLink {
+                        ZStackBottomTrailingAlignment()
+                    } label: {
+                        Text("ZStack Bottom Trailing Alignment")
+                    }
+                    
                 } header: {
                     Text("ZStack")
                 }
