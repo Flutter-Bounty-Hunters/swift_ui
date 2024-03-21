@@ -15,6 +15,7 @@
 		958E8C8A2BAA97B800726F3E /* HStackExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E8C892BAA97B800726F3E /* HStackExamples.swift */; };
 		B3CBD1552B2E18320095DE1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */; };
 		B3CBD1572B2E1BE20095DE1F /* LocalizableAlternative.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */; };
+		B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD966F2B66513800F66E9F /* ImageLocalizationPage.swift */; };
 		C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902DDE42AE38C8A00242DBA /* VStackExamples.swift */; };
 		C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902DDE62AE3904400242DBA /* TodoPage.swift */; };
 		C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAE2802AC23AB40042DBC7 /* swift_ui_galleryApp.swift */; };
@@ -58,6 +59,7 @@
 		958E8C892BAA97B800726F3E /* HStackExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStackExamples.swift; sourceTree = "<group>"; };
 		B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizableAlternative.xcstrings; sourceTree = "<group>"; };
+		B3DD966F2B66513800F66E9F /* ImageLocalizationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLocalizationPage.swift; sourceTree = "<group>"; };
 		C902DDE42AE38C8A00242DBA /* VStackExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackExamples.swift; sourceTree = "<group>"; };
 		C902DDE62AE3904400242DBA /* TodoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoPage.swift; sourceTree = "<group>"; };
 		C9CAE27D2AC23AB40042DBC7 /* swift_ui_gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_ui_gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,22 @@
 			path = text;
 			sourceTree = "<group>";
 		};
+		B3DD966D2B66513800F66E9F /* image */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD966E2B66513800F66E9F /* localization */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		B3DD966E2B66513800F66E9F /* localization */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD966F2B66513800F66E9F /* ImageLocalizationPage.swift */,
+			);
+			path = localization;
+			sourceTree = "<group>";
+		};
 		C9CAE2742AC23AB40042DBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +224,7 @@
 		C9CAE2B42AE107B60042DBC7 /* primitives */ = {
 			isa = PBXGroup;
 			children = (
+				B3DD966D2B66513800F66E9F /* image */,
 				C9CAE2AA2ADFB1480042DBC7 /* PrimitivesPage.swift */,
 				719116872B216D060007C4DE /* text */,
 			);
@@ -401,6 +420,7 @@
 				C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */,
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
 				958E8C8A2BAA97B800726F3E /* HStackExamples.swift in Sources */,
+				B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */,
 				C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */,
 				C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */,
 				C9CAE2AF2AE106540042DBC7 /* ScaffoldsPage.swift in Sources */,
@@ -575,7 +595,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flutterbountyhunters.swift-ui-gallery";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flutterbountyhunters.swift-ui-gallery-gekko";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -604,7 +624,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flutterbountyhunters.swift-ui-gallery";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flutterbountyhunters.swift-ui-gallery-gekko";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
