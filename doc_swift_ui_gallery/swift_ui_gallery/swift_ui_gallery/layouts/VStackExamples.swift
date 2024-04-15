@@ -13,6 +13,12 @@ struct VStackTopAlignedPage : View {
     }
 }
 
+struct VStackTopAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackTopAlignedPage()
+    }
+}
+
 struct VStackMiddleAlignedPage : View {
     var body: some View {
         NavigationStack {
@@ -22,6 +28,12 @@ struct VStackMiddleAlignedPage : View {
                 Text("Third")
             }
         }.navigationTitle("Middle Aligned")
+    }
+}
+
+struct VStackMiddleAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackMiddleAlignedPage()
     }
 }
 
@@ -38,6 +50,12 @@ struct VStackBottomAlignedPage : View {
     }
 }
 
+struct VStackBottomAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackBottomAlignedPage()
+    }
+}
+
 struct VStackContentLeftAlignedPage: View {
     var body: some View {
         NavigationStack {
@@ -47,6 +65,12 @@ struct VStackContentLeftAlignedPage: View {
                 Text("Third")
             }
         }.navigationTitle("Content Left Aligned")
+    }
+}
+
+struct VStackContentLeftAlignmentPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackContentLeftAlignedPage()
     }
 }
 
@@ -62,6 +86,12 @@ struct VStackContentCenterAlignedPage: View {
     }
 }
 
+struct VStackContentCenterAlignmentPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackContentCenterAlignedPage()
+    }
+}
+
 struct VStackContentRightAlignedPage: View {
     var body: some View {
         NavigationStack {
@@ -74,6 +104,12 @@ struct VStackContentRightAlignedPage: View {
     }
 }
 
+struct VStackContentRightAlignmentPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackContentRightAlignedPage()
+    }
+}
+
 struct VStackContentSpacingPage: View {
     var body: some View {
         NavigationStack {
@@ -83,6 +119,12 @@ struct VStackContentSpacingPage: View {
                 Text("Third")
             }
         }.navigationTitle("Content Spacing")
+    }
+}
+
+struct VStackContentSpacingPage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackContentSpacingPage()
     }
 }
 
@@ -116,6 +158,12 @@ struct VStackExceedsAvailableSpacePage : View {
     }
 }
 
+struct VStackExceedsAvailableSpacePage_Previews: PreviewProvider {
+    static var previews: some View {
+        VStackExceedsAvailableSpacePage()
+    }
+}
+
 struct LazyVStackExceedsAvailableSpacePage: View {
     var body: some View {
         NavigationStack {
@@ -143,55 +191,6 @@ struct LazyVStackExceedsAvailableSpacePage: View {
                     .frame(height: 200)
             }
         }.navigationTitle("LazyVStack Exceeds Space")
-    }
-}
-
-
-struct VStackTopAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackTopAlignedPage()
-    }
-}
-
-struct VStackMiddleAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackMiddleAlignedPage()
-    }
-}
-
-struct VStackBottomAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackBottomAlignedPage()
-    }
-}
-
-struct VStackContentLeftAlignmentPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackContentLeftAlignedPage()
-    }
-}
-
-struct VStackContentCenterAlignmentPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackContentCenterAlignedPage()
-    }
-}
-
-struct VStackContentRightAlignmentPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackContentRightAlignedPage()
-    }
-}
-
-struct VStackContentSpacingPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackContentSpacingPage()
-    }
-}
-
-struct VStackExceedsAvailableSpacePage_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackExceedsAvailableSpacePage()
     }
 }
 

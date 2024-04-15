@@ -13,6 +13,12 @@ struct HStackLeftAlignedPage : View {
     }
 }
 
+struct HStackLeftAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackLeftAlignedPage()
+    }
+}
+
 struct HStackCenterAlignedPage : View {
     var body: some View {
         NavigationStack {
@@ -25,6 +31,11 @@ struct HStackCenterAlignedPage : View {
     }
 }
 
+struct HStackCenterAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackCenterAlignedPage()
+    }
+}
 
 struct HStackRightAlignedPage : View {
     var body: some View {
@@ -39,6 +50,12 @@ struct HStackRightAlignedPage : View {
     }
 }
 
+struct HStackRightAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackRightAlignedPage()
+    }
+}
+
 struct HStackContentTopAlignedPage : View {
     var body: some View {
         NavigationStack {
@@ -46,8 +63,14 @@ struct HStackContentTopAlignedPage : View {
                 Text("First").font(.largeTitle)
                 Text("Second").font(.title)
                 Text("Third").font(.title2)
-            }.border(Color.blue, width: 1)
+            }
         }.navigationTitle("Content Top Aligned")
+    }
+}
+
+struct HStackContentTopAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackContentTopAlignedPage()
     }
 }
 
@@ -58,8 +81,14 @@ struct HStackContentCenterAlignedPage : View {
                 Text("First").font(.largeTitle)
                 Text("Second").font(.title)
                 Text("Third").font(.title2)
-            }.border(Color.blue, width: 1)
+            }
         }.navigationTitle("Content Center Aligned")
+    }
+}
+
+struct HStackContentCenterAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackContentCenterAlignedPage()
     }
 }
 
@@ -70,8 +99,14 @@ struct HStackContentBottomAlignedPage : View {
                 Text("First").font(.largeTitle)
                 Text("Second").font(.title)
                 Text("Third").font(.title2)
-            }.border(Color.blue, width: 1)
+            }
         }.navigationTitle("Content Bottom Aligned")
+    }
+}
+
+struct HStackContentBottomAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackContentBottomAlignedPage()
     }
 }
 
@@ -82,11 +117,16 @@ struct HStackContentFirstTextBaselineAlignedPage : View {
                 Text("First").font(.largeTitle)
                 Text("Second").font(.title)
                 Text("Third").font(.title2)
-            }.border(Color.blue, width: 1)
+            }
         }.navigationTitle("Content First Text Baseline Aligned")
     }
 }
 
+struct HStackContentFirstTextBaselineAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackContentFirstTextBaselineAlignedPage()
+    }
+}
 
 struct HStackContentLastTextBaselineAlignedPage : View {
     var body: some View {
@@ -95,8 +135,14 @@ struct HStackContentLastTextBaselineAlignedPage : View {
                 Text("First").font(.largeTitle)
                 Text("Second").font(.title)
                 Text("Third").font(.title2)
-            }.border(Color.blue, width: 1)
+            }
         }.navigationTitle("Content Last Text Baseline Aligned")
+    }
+}
+
+struct HStackContentLastTextBaselineAlignedPage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackContentLastTextBaselineAlignedPage()
     }
 }
 
@@ -130,6 +176,11 @@ struct HStackExceedsAvailableSpacePage : View {
     }
 }
 
+struct HStackExceedsAvailableSpacePage_Previews: PreviewProvider {
+    static var previews: some View {
+        HStackExceedsAvailableSpacePage()
+    }
+}
 
 struct LazyHStackExceedsAvailableSpacePage : View {
     var body: some View {
@@ -161,67 +212,8 @@ struct LazyHStackExceedsAvailableSpacePage : View {
     }
 }
 
-
-
-struct HStackLeftAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackLeftAlignedPage()
-    }
-}
-
-struct HStackCenterAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackCenterAlignedPage()
-    }
-}
-
-struct HStackRightAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackRightAlignedPage()
-    }
-}
-
-struct HStackContentTopAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackContentTopAlignedPage()
-    }
-}
-
-struct HStackContentCenterAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackContentCenterAlignedPage()
-    }
-}
-
-struct HStackContentBottomAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackContentBottomAlignedPage()
-    }
-}
-
-
-struct HStackContentFirstTextBaselineAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackContentFirstTextBaselineAlignedPage()
-    }
-}
-
-
-struct HStackContentLastTextBaselineAlignedPage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackContentLastTextBaselineAlignedPage()
-    }
-}
-
-struct HStackExceedsAvailableSpacePage_Previews: PreviewProvider {
-    static var previews: some View {
-        HStackExceedsAvailableSpacePage()
-    }
-}
-
 struct LazyHStackExceedsAvailableSpacePage_Previews: PreviewProvider {
     static var previews: some View {
         LazyHStackExceedsAvailableSpacePage()
     }
 }
-
