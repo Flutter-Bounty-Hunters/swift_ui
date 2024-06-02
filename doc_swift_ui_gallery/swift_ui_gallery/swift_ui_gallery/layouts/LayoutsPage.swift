@@ -6,25 +6,25 @@ struct LayoutsPage: View {
             List {
                 Section() {
                     NavigationLink {
-                        VStackTopAlignedPage()
+                        VStackLeadingAlignedPage()
                     } label: {
                         Text("Top Aligned")
                     }
                     
                     NavigationLink {
-                        VStackMiddleAlignedPage()
+                        VStackCenterAlignedPage()
                     } label: {
                         Text("Middle Aligned")
                     }
                     
                     NavigationLink {
-                        VStackBottomAlignedPage()
+                        VStackTrailingAlignedPage()
                     } label: {
                         Text("Bottom Aligned")
                     }
                     
                     NavigationLink {
-                        VStackExceedsAvailableSpaceAlignedPage()
+                        VStackExceedsAvailableSpacePage()
                     } label: {
                         Text("Exceeds available space")
                     }

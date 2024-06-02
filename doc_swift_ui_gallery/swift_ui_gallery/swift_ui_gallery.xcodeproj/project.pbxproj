@@ -29,6 +29,8 @@
 		C9CAE2B12AE1065F0042DBC7 /* ControlsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAE2B02AE1065F0042DBC7 /* ControlsPage.swift */; };
 		C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAE2B22AE1066B0042DBC7 /* MotionPage.swift */; };
 		C9CAE2BB2AE1089A0042DBC7 /* LayoutsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAE2BA2AE1089A0042DBC7 /* LayoutsPage.swift */; };
+		C9FB17562C0C4AB4004479AA /* HStackExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB17552C0C4AB4004479AA /* HStackExamples.swift */; };
+		C9FB17582C0C4D25004479AA /* ZStackExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB17572C0C4D25004479AA /* ZStackExamples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		C9CAE2B02AE1065F0042DBC7 /* ControlsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsPage.swift; sourceTree = "<group>"; };
 		C9CAE2B22AE1066B0042DBC7 /* MotionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionPage.swift; sourceTree = "<group>"; };
 		C9CAE2BA2AE1089A0042DBC7 /* LayoutsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsPage.swift; sourceTree = "<group>"; };
+		C9FB17552C0C4AB4004479AA /* HStackExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackExamples.swift; sourceTree = "<group>"; };
+		C9FB17572C0C4D25004479AA /* ZStackExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,8 @@
 			children = (
 				C9CAE2BA2AE1089A0042DBC7 /* LayoutsPage.swift */,
 				C902DDE42AE38C8A00242DBA /* VStackExamples.swift */,
+				C9FB17552C0C4AB4004479AA /* HStackExamples.swift */,
+				C9FB17572C0C4D25004479AA /* ZStackExamples.swift */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
@@ -410,9 +416,11 @@
 				C9CAE2BB2AE1089A0042DBC7 /* LayoutsPage.swift in Sources */,
 				C9CAE2B12AE1065F0042DBC7 /* ControlsPage.swift in Sources */,
 				C9CAE2AB2ADFB1480042DBC7 /* PrimitivesPage.swift in Sources */,
+				C9FB17582C0C4D25004479AA /* ZStackExamples.swift in Sources */,
 				C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */,
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
 				B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */,
+				C9FB17562C0C4AB4004479AA /* HStackExamples.swift in Sources */,
 				C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */,
 				C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */,
 				C9CAE2AF2AE106540042DBC7 /* ScaffoldsPage.swift in Sources */,

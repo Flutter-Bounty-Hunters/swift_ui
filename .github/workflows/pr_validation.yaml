@@ -1,0 +1,65 @@
+name: Validate pull requests
+on: [pull_request]
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      # Checkout the PR branch
+      - uses: actions/checkout@v3
+
+      # Setup Flutter environment
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          architecture: x64
+
+      # Download all the packages that the app uses
+      - run: flutter pub get
+
+      # Enforce lint rules
+      - run: flutter analyze
+
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      # Checkout the PR branch
+      - uses: actions/checkout@v3
+
+      # Setup Flutter environment
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          architecture: x64
+
+      # Download all the packages that the app uses
+      - run: flutter pub get
+
+      # Run all tests
+      - run: flutter test --exclude-tags=golden
+
+  test-goldens:
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      # Checkout the PR branch
+      - uses: actions/checkout@v3
+
+      # Setup Flutter environment
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          architecture: x64
+
+      # Download all the packages that the app uses
+      - run: flutter pub get
+
+      # Run all tests
+      - run: flutter test --tags=golden

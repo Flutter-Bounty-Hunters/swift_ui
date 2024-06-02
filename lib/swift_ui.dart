@@ -22,3 +22,4 @@ export 'src/shapes/ellipse.dart';
 
 // Infrastructure
 export 'src/infrastructure/late_bound_build.dart';
+export 'src/infrastructure/colors.dart';

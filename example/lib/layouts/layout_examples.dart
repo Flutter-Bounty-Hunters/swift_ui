@@ -1,5 +1,8 @@
-import 'package:example/infrastructure/InventoryPage.dart';
+import 'package:example/demo_screen.dart';
+import 'package:example/infrastructure/inventory_page.dart';
 import 'package:example/infrastructure/not_built_yet_page.dart';
+import 'package:example/layouts/hstack.dart';
+import 'package:example/layouts/vstack.dart';
 import 'package:flutter/cupertino.dart';
 
 class LayoutsPage extends StatelessWidget {
@@ -7,27 +10,35 @@ class LayoutsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const InventoryPage(
+    return InventoryPage(
       title: "Layouts",
       groups: [
         InventoryGroup(
           title: "VSTACK",
           items: [
             InventoryItem(
-              label: "Top Aligned",
-              pageBuilder: notBuiltYetPageBuilder,
+              label: "Leading Aligned",
+              pageBuilder: createDemo(
+                const VStackLeadingAlignedDemo(),
+              ),
             ),
             InventoryItem(
-              label: "Middle Aligned",
-              pageBuilder: notBuiltYetPageBuilder,
+              label: "Center Aligned",
+              pageBuilder: createDemo(
+                const VStackCenterAlignedDemo(),
+              ),
             ),
             InventoryItem(
-              label: "Bottom Aligned",
-              pageBuilder: notBuiltYetPageBuilder,
+              label: "Trailing Aligned",
+              pageBuilder: createDemo(
+                const VStackTrailingAlignedDemo(),
+              ),
             ),
             InventoryItem(
               label: "Exceeds Available Space",
-              pageBuilder: notBuiltYetPageBuilder,
+              pageBuilder: createDemo(
+                const VStackExceedsAvailableSpaceDemo(),
+              ),
             ),
           ],
         ),
@@ -35,24 +46,32 @@ class LayoutsPage extends StatelessWidget {
           title: "HSTACK",
           items: [
             InventoryItem(
-              label: "Left Aligned",
-              pageBuilder: notBuiltYetPageBuilder,
+              label: "Top Aligned",
+              pageBuilder: createDemo(
+                const HStackTopAlignedDemo(),
+              ),
             ),
             InventoryItem(
               label: "Center Aligned",
-              pageBuilder: notBuiltYetPageBuilder,
+              pageBuilder: createDemo(
+                const HStackCenterAlignedDemo(),
+              ),
             ),
             InventoryItem(
-              label: "Right Aligned",
-              pageBuilder: notBuiltYetPageBuilder,
+              label: "Bottom Aligned",
+              pageBuilder: createDemo(
+                const HStackBottomAlignedDemo(),
+              ),
             ),
             InventoryItem(
               label: "Exceeds Available Space",
-              pageBuilder: notBuiltYetPageBuilder,
+              pageBuilder: createDemo(
+                const HStackExceedsAvailableSpaceDemo(),
+              ),
             ),
           ],
         ),
-        InventoryGroup(
+        const InventoryGroup(
           title: "ZSTACK",
           items: [
             InventoryItem(
@@ -61,7 +80,7 @@ class LayoutsPage extends StatelessWidget {
             ),
           ],
         ),
-        InventoryGroup(
+        const InventoryGroup(
           title: "GRID",
           items: [
             InventoryItem(
