@@ -1,20 +1,8 @@
 import SwiftUI
 
-struct VStackTopAlignedPage : View {
+struct VStackLeadingAlignedPage : View {
     var body: some View {
-        VStack() {
-            Text("First")
-            Text("Second")
-            Text("Third")
-            
-            Spacer()
-        }
-    }
-}
-
-struct VStackMiddleAlignedPage : View {
-    var body: some View {
-        VStack() {
+      VStack(alignment: .leading) {
             Text("First")
             Text("Second")
             Text("Third")
@@ -22,11 +10,9 @@ struct VStackMiddleAlignedPage : View {
     }
 }
 
-struct VStackBottomAlignedPage : View {
+struct VStackCenterAlignedPage : View {
     var body: some View {
-        VStack() {
-            Spacer()
-            
+      VStack(alignment: .center) {
             Text("First")
             Text("Second")
             Text("Third")
@@ -34,7 +20,17 @@ struct VStackBottomAlignedPage : View {
     }
 }
 
-struct VStackExceedsAvailableSpaceAlignedPage : View {
+struct VStackTrailingAlignedPage : View {
+    var body: some View {
+      VStack(alignment: .trailing) {
+            Text("First")
+            Text("Second")
+            Text("Third")
+        }
+    }
+}
+
+struct VStackExceedsAvailableSpacePage : View {
     var body: some View {
         VStack() {
             Rectangle()
@@ -62,6 +58,9 @@ struct VStackExceedsAvailableSpaceAlignedPage : View {
 
 struct VStackTopAlignedPage_Previews: PreviewProvider {
     static var previews: some View {
-        VStackExceedsAvailableSpaceAlignedPage()
+//      VStackLeadingAlignedPage()
+//      VStackCenterAlignedPage()
+//      VStackTrailingAlignedPage()
+      VStackExceedsAvailableSpacePage()
     }
 }

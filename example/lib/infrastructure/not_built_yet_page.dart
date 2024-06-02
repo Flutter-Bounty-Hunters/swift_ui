@@ -36,4 +36,4 @@ Follow @FlutterBounties on Twitter to stay up to date.
   ''';
 }
 
-Widget notBuiltYetPageBuilder(BuildContext) => const NotBuiltYetPage();
+Widget notBuiltYetPageBuilder(BuildContext context) => const NotBuiltYetPage();
