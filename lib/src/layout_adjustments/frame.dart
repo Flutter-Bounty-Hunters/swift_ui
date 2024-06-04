@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+/// A layout widget that aligns its child within a fixed-size rectangle.
 class Frame extends StatelessWidget {
   const Frame({
     super.key,
@@ -9,9 +10,22 @@ class Frame extends StatelessWidget {
     required this.child,
   });
 
+  /// The width of the frame.
+  ///
+  /// If `null`, the intrinsic width of the child is used.
   final double? width;
+
+  /// The height of the frame.
+  ///
+  /// If `null`, the intrinsic height of the child is used.
   final double? height;
+
+  /// The alignment of the child within the frame.
+  ///
+  /// See [Alignment] for more info about the available alignments.
   final Alignment alignment;
+
+  /// The child widget to be displayed within the frame.
   final Widget child;
 
   @override

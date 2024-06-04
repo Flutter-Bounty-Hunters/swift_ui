@@ -26,6 +26,10 @@ struct ContentView: View {
             MotionPage().tabItem{
                 Label("Motion", systemImage: "move.3d")
             }
+            
+            ShapesPage().tabItem{
+                Label("Shapes", systemImage: "square.on.circle")
+            }
         }
     }
 }

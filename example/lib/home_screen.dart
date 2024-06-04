@@ -1,9 +1,11 @@
 import 'package:example/collections/collection_examples.dart';
 import 'package:example/controls/controls_examples.dart';
+import 'package:example/infrastructure/inventory_page.dart';
 import 'package:example/layouts/layout_examples.dart';
 import 'package:example/motion/motion_examples.dart';
 import 'package:example/primitives/primitive_examples.dart';
 import 'package:example/scaffolds/scaffold_examples.dart';
+import 'package:example/shapes/shapes_examples.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -29,9 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
           case 3:
             return const ScaffoldsPage();
           case 4:
-            return const ControlsPage();
-          case 5:
-            return const MotionPage();
+            return const OverflowPage();
           default:
             throw Exception("Unknown tab index: $index");
         }
@@ -55,15 +55,41 @@ class _HomeScreenState extends State<HomeScreen> {
             label: "Scaffolds",
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.slider_horizontal_3),
-            label: "Controls",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.move),
-            label: "Motion",
+            icon: Icon(CupertinoIcons.ellipsis),
+            label: "More",
           ),
         ],
       ),
+    );
+  }
+}
+
+class OverflowPage extends StatelessWidget {
+  const OverflowPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return InventoryPage(
+      title: "More",
+      groups: [
+        InventoryGroup(
+          title: 'ADDITIONAL CATEGORIES',
+          items: [
+            InventoryItem(
+              label: "Controls",
+              pageBuilder: (context) => const ControlsPage(),
+            ),
+            InventoryItem(
+              label: "Motion",
+              pageBuilder: (context) => const MotionPage(),
+            ),
+            InventoryItem(
+              label: "Shapes",
+              pageBuilder: (context) => const ShapesPage(),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }

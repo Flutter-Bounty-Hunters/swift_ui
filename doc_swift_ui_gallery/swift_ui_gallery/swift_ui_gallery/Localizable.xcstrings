@@ -197,10 +197,16 @@
     "First" : {
 
     },
+    "First\nSecond" : {
+
+    },
     "flight" : {
 
     },
     "footnote" : {
+
+    },
+    "Fourth\nFifth\nSixth" : {
 
     },
     "Frame" : {
@@ -368,6 +374,9 @@
     "Other initializers" : {
 
     },
+    "Overlay" : {
+
+    },
     "Party LET" : {
 
     },
@@ -413,6 +422,9 @@
     "Raised pitch" : {
 
     },
+    "Rectangle" : {
+
+    },
     "red" : {
 
     },
@@ -454,6 +466,9 @@
 
     },
     "serif" : {
+
+    },
+    "Shapes" : {
 
     },
     "size 6" : {
