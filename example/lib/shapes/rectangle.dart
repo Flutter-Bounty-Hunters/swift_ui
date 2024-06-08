@@ -10,6 +10,7 @@ class RectangleDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return const VStack(
       [
+        // Rectangle with solid fill
         Frame(
           width: 200,
           height: 100,
@@ -19,6 +20,8 @@ class RectangleDemo extends StatelessWidget {
             ),
           ),
         ),
+
+        // Rectangle with gradient fill
         Frame(
           width: 200,
           height: 100,
@@ -26,10 +29,34 @@ class RectangleDemo extends StatelessWidget {
             fill: ShapeStyle(
               gradient: LinearGradient(
                 colors: [Colors.yellow, Colors.orange],
-                begin: AlignmentDirectional.centerStart,
-                end: AlignmentDirectional.centerEnd,
               ),
             ),
+          ),
+        ),
+
+        // Rectangle with solid stroke
+        Frame(
+          width: 200,
+          height: 100,
+          child: Rectangle(
+            stroke: ShapeStyle(
+              color: Colors.red,
+            ),
+            strokeLineWidth: 4.0,
+          ),
+        ),
+
+        // Rectangle with gradient stroke
+        Frame(
+          width: 200,
+          height: 100,
+          child: Rectangle(
+            stroke: ShapeStyle(
+              gradient: LinearGradient(
+                colors: [Colors.yellow, Colors.blue],
+              ),
+            ),
+            strokeLineWidth: 14.0,
           ),
         ),
       ],

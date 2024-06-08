@@ -4,20 +4,9 @@ struct RectanglePage: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                // Basic rectangle
+                // Rectangle with solid fill
                 Rectangle()
                     .fill(Color.blue)
-                    .frame(width: 200, height: 100)
-                
-                // Rectangle with stroke
-                Rectangle()
-                    .stroke(Color.red, lineWidth: 4)
-                    .frame(width: 200, height: 100)
-                
-                // Rectangle with rounded corners
-                Rectangle()
-                    .fill(Color.green)
-                    .cornerRadius(20)
                     .frame(width: 200, height: 100)
                 
                 // Rectangle with gradient fill
@@ -25,10 +14,14 @@ struct RectanglePage: View {
                     .fill(LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .leading, endPoint: .trailing))
                     .frame(width: 200, height: 100)
                 
-                // Rectangle with shadow
+                // Rectangle with solid stroke
                 Rectangle()
-                    .fill(Color.purple)
-                    .shadow(color: .gray, radius: 10, x: 0, y: 10)
+                    .stroke(Color.red, lineWidth: 4)
+                    .frame(width: 200, height: 100)
+                
+                // Rectangle with gradient stroke
+                Rectangle()
+                    .stroke(LinearGradient(gradient: Gradient(colors: [.yellow, .blue]), startPoint: .leading, endPoint: .trailing), lineWidth: 14)
                     .frame(width: 200, height: 100)
             }
         }

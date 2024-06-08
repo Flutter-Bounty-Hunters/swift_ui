@@ -2,6 +2,8 @@ import 'package:flutter/painting.dart';
 
 /// A color or pattern used for painting a shape.
 class ShapeStyle {
+  // Can't make color an optional positional parameter
+  // https://github.com/dart-lang/language/issues/1076
   const ShapeStyle({
     this.color,
     this.gradient,
@@ -12,4 +14,15 @@ class ShapeStyle {
 
   /// A gradient used for painting a shape.
   final Gradient? gradient;
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    return other is ShapeStyle &&
+        other.color == color &&
+        other.gradient == gradient;
+  }
+
+  @override
+  int get hashCode => Object.hash(color, gradient);
 }

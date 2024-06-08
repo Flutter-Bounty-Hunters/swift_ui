@@ -192,7 +192,6 @@
 		C9CAE27F2AC23AB40042DBC7 /* swift_ui_gallery */ = {
 			isa = PBXGroup;
 			children = (
-				714951432C0EB2C200818B06 /* shapes */,
 				B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */,
 				B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */,
 				C9CAE2B92AE108790042DBC7 /* layouts */,
@@ -201,6 +200,7 @@
 				C9CAE2B62AE107D30042DBC7 /* scaffolds */,
 				C9CAE2B52AE107C90042DBC7 /* collections */,
 				C9CAE2B42AE107B60042DBC7 /* primitives */,
+				714951432C0EB2C200818B06 /* shapes */,
 				C9CAE2802AC23AB40042DBC7 /* swift_ui_galleryApp.swift */,
 				C9CAE2822AC23AB40042DBC7 /* ContentView.swift */,
 				C9CAE2842AC23AB50042DBC7 /* Assets.xcassets */,
