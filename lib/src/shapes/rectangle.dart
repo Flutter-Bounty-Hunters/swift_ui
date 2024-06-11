@@ -75,77 +75,66 @@ class _RectanglePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    _paintFill(canvas, size, fillColor, fillGradient);
-    _paintStroke(canvas, size, strokeColor, strokeGradient, strokeLineWidth);
+    _paintFill(canvas, size);
+    _paintStroke(canvas, size);
   }
 
-  void _paintFill(Canvas canvas, Size size, Color? color, Gradient? gradient) {
-    if (color != null) {
-      _paintSolidFill(canvas, size, color);
-    } else if (gradient != null) {
-      _paintGradientFill(canvas, size, gradient);
+  void _paintFill(Canvas canvas, Size size) {
+    if (fillColor != null) {
+      _paintSolidFill(canvas, size);
+    } else if (fillGradient != null) {
+      _paintGradientFill(canvas, size);
     }
   }
 
-  void _paintSolidFill(Canvas canvas, Size size, Color color) {
+  void _paintSolidFill(Canvas canvas, Size size) {
     final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final paint = Paint()
       ..style = PaintingStyle.fill
-      ..color = color;
+      ..color = fillColor!;
     canvas.drawRect(rect, paint);
   }
 
-  void _paintGradientFill(Canvas canvas, Size size, Gradient gradient) {
+  void _paintGradientFill(Canvas canvas, Size size) {
     final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final paint = Paint()
       ..style = PaintingStyle.fill
-      ..shader = gradient.createShader(rect);
+      ..shader = fillGradient!.createShader(rect);
     canvas.drawRect(rect, paint);
   }
 
-  void _paintStroke(
-    Canvas canvas,
-    Size size,
-    Color? color,
-    Gradient? gradient,
-    double lineWidth,
-  ) {
-    final rect = Rect.fromLTWH(
-      lineWidth / 2,
-      lineWidth / 2,
-      size.width - lineWidth,
-      size.height - lineWidth,
+  void _paintStroke(Canvas canvas, Size size) {
+    if (strokeColor != null) {
+      _paintSolidStroke(canvas, size);
+    } else if (strokeGradient != null) {
+      _paintGradientStroke(canvas, size);
+    }
+  }
+
+  void _paintSolidStroke(Canvas canvas, Size size) {
+    final rect = _adjustRectForLineWidth(size);
+    final paint = Paint()
+      ..style = PaintingStyle.stroke
+      ..color = strokeColor!
+      ..strokeWidth = strokeLineWidth;
+    canvas.drawRect(rect, paint);
+  }
+
+  Rect _adjustRectForLineWidth(Size size) {
+    return Rect.fromLTWH(
+      strokeLineWidth / 2,
+      strokeLineWidth / 2,
+      size.width - strokeLineWidth,
+      size.height - strokeLineWidth,
     );
-    if (color != null) {
-      _paintSolidStroke(canvas, rect, color, lineWidth);
-    } else if (gradient != null) {
-      _paintGradientStroke(canvas, rect, gradient, lineWidth);
-    }
   }
 
-  void _paintSolidStroke(
-    Canvas canvas,
-    Rect rect,
-    Color color,
-    double lineWidth,
-  ) {
+  void _paintGradientStroke(Canvas canvas, Size size) {
+    final rect = _adjustRectForLineWidth(size);
     final paint = Paint()
       ..style = PaintingStyle.stroke
-      ..color = color
-      ..strokeWidth = lineWidth;
-    canvas.drawRect(rect, paint);
-  }
-
-  void _paintGradientStroke(
-    Canvas canvas,
-    Rect rect,
-    Gradient gradient,
-    double lineWidth,
-  ) {
-    final paint = Paint()
-      ..style = PaintingStyle.stroke
-      ..shader = gradient.createShader(rect)
-      ..strokeWidth = lineWidth;
+      ..shader = strokeGradient!.createShader(rect)
+      ..strokeWidth = strokeLineWidth;
     canvas.drawRect(rect, paint);
   }
 

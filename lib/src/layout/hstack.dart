@@ -60,7 +60,8 @@ class HStack extends StatelessWidget {
         return CrossAxisAlignment.end;
       case VerticalAlignment.firstTextBaseline:
       case VerticalAlignment.lastTextBaseline:
-        throw Exception("HStack does not yet support this alignment: $alignment");
+        throw Exception(
+            "HStack does not yet support this alignment: $alignment");
     }
   }
 }

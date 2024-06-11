@@ -29,4 +29,5 @@ migrate_working_dir/
 build/
 
 # Don't check in golden failure output.
-**/failures/*.png
+test/**/failures/**
+test_goldens/**/failures/**
