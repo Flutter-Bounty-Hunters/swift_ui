@@ -20,7 +20,6 @@ export 'src/layout_adjustments/frame.dart';
 // Shapes
 export 'src/shapes/ellipse.dart';
 export 'src/shapes/rectangle.dart';
-export 'src/shapes/shape_style.dart';
 
 // Infrastructure
 export 'src/infrastructure/late_bound_build.dart';

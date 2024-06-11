@@ -13,7 +13,7 @@ void main() {
             width: 200,
             height: 100,
             child: Rectangle(
-              fill: ShapeStyle(color: Colors.blue),
+              fillColor: Colors.blue,
             ),
           ),
         )
@@ -23,10 +23,8 @@ void main() {
             width: 200,
             height: 100,
             child: Rectangle(
-              fill: ShapeStyle(
-                gradient: LinearGradient(
-                  colors: [Colors.yellow, Colors.orange],
-                ),
+              fillGradient: LinearGradient(
+                colors: [Colors.yellow, Colors.orange],
               ),
             ),
           ),
@@ -37,7 +35,7 @@ void main() {
             width: 200,
             height: 100,
             child: Rectangle(
-              stroke: ShapeStyle(color: Colors.blue),
+              strokeColor: Colors.blue,
             ),
           ),
         )
@@ -47,10 +45,8 @@ void main() {
             width: 200,
             height: 100,
             child: Rectangle(
-              stroke: ShapeStyle(
-                gradient: LinearGradient(
-                  colors: [Colors.yellow, Colors.orange],
-                ),
+              strokeGradient: LinearGradient(
+                colors: [Colors.yellow, Colors.orange],
               ),
             ),
           ),

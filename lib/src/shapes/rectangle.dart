@@ -1,23 +1,41 @@
 import 'package:flutter/widgets.dart';
-import 'package:swift_ui/src/shapes/shape_style.dart';
 
 /// A rectangular shape that takes the size of the parent
 class Rectangle extends StatelessWidget {
   const Rectangle({
     super.key,
-    this.fill,
-    this.stroke,
+    this.fillColor,
+    this.fillGradient,
+    this.strokeColor,
+    this.strokeGradient,
     this.strokeLineWidth = 1.0,
   });
 
-  /// A color or gradient used for painting the interior of the rectangle.
-  final ShapeStyle? fill;
+  /// A color used for painting the interior of the rectangle.
+  ///
+  /// This is an alternative to [fillGradient].
+  final Color? fillColor;
 
-  /// A color or gradient used for painting the outline of the rectangle.
+  /// A gradient used for painting the interior of the rectangle.
+  ///
+  /// This is an alternative to [fillColor].
+  final Gradient? fillGradient;
+
+  /// A color used for painting the outline of the rectangle.
   ///
   /// The stroke line is drawn inside the frame of the rectangle, and its
   /// width is determined by [strokeLineWidth].
-  final ShapeStyle? stroke;
+  ///
+  /// This is an alternative to [strokeGradient].
+  final Color? strokeColor;
+
+  /// A gradient used for painting the outline of the rectangle.
+  ///
+  /// The stroke line is drawn inside the frame of the rectangle, and its
+  /// width is determined by [strokeLineWidth].
+  ///
+  /// This is an alternative to [strokeColor].
+  final Gradient? strokeGradient;
 
   /// The width of the stroke used to paint the outline of the rectangle.
   ///
@@ -29,8 +47,10 @@ class Rectangle extends StatelessWidget {
     return SizedBox.expand(
       child: CustomPaint(
         painter: _RectanglePainter(
-          fill: fill,
-          stroke: stroke,
+          fillColor: fillColor,
+          fillGradient: fillGradient,
+          strokeColor: strokeColor,
+          strokeGradient: strokeGradient,
           strokeLineWidth: strokeLineWidth,
         ),
       ),
@@ -40,67 +60,66 @@ class Rectangle extends StatelessWidget {
 
 class _RectanglePainter extends CustomPainter {
   _RectanglePainter({
-    required this.fill,
-    required this.stroke,
+    required this.fillColor,
+    required this.fillGradient,
+    required this.strokeColor,
+    required this.strokeGradient,
     required this.strokeLineWidth,
   });
 
-  final ShapeStyle? fill;
-  final ShapeStyle? stroke;
+  final Color? fillColor;
+  final Gradient? fillGradient;
+  final Color? strokeColor;
+  final Gradient? strokeGradient;
   final double strokeLineWidth;
 
   @override
   void paint(Canvas canvas, Size size) {
-    _paintFill(canvas, size, fill);
-    _paintStroke(canvas, size, stroke, strokeLineWidth);
+    _paintFill(canvas, size, fillColor, fillGradient);
+    _paintStroke(canvas, size, strokeColor, strokeGradient, strokeLineWidth);
   }
 
-  void _paintFill(Canvas canvas, Size size, ShapeStyle? fillStyle) {
-    if (fillStyle == null) {
-      return;
-    }
-    if (fillStyle.color != null) {
-      _paintSolidFill(canvas, size, fillStyle);
-    } else {
-      _paintGradientFill(canvas, size, fillStyle);
+  void _paintFill(Canvas canvas, Size size, Color? color, Gradient? gradient) {
+    if (color != null) {
+      _paintSolidFill(canvas, size, color);
+    } else if (gradient != null) {
+      _paintGradientFill(canvas, size, gradient);
     }
   }
 
-  void _paintSolidFill(Canvas canvas, Size size, ShapeStyle fillStyle) {
+  void _paintSolidFill(Canvas canvas, Size size, Color color) {
     final rect = Rect.fromLTWH(0, 0, size.width, size.height);
-    final fillPaint = Paint()
+    final paint = Paint()
       ..style = PaintingStyle.fill
-      ..color = fillStyle.color ?? const Color(0x00000000);
-    canvas.drawRect(rect, fillPaint);
+      ..color = color;
+    canvas.drawRect(rect, paint);
   }
 
-  void _paintGradientFill(Canvas canvas, Size size, ShapeStyle fillStyle) {
+  void _paintGradientFill(Canvas canvas, Size size, Gradient gradient) {
     final rect = Rect.fromLTWH(0, 0, size.width, size.height);
-    final fillPaint = Paint()
+    final paint = Paint()
       ..style = PaintingStyle.fill
-      ..shader = fillStyle.gradient?.createShader(rect);
-    canvas.drawRect(rect, fillPaint);
+      ..shader = gradient.createShader(rect);
+    canvas.drawRect(rect, paint);
   }
 
   void _paintStroke(
     Canvas canvas,
     Size size,
-    ShapeStyle? strokeStyle,
+    Color? color,
+    Gradient? gradient,
     double lineWidth,
   ) {
-    if (strokeStyle == null) {
-      return;
-    }
     final rect = Rect.fromLTWH(
       lineWidth / 2,
       lineWidth / 2,
       size.width - lineWidth,
       size.height - lineWidth,
     );
-    if (strokeStyle.color != null) {
-      _paintSolidStroke(canvas, rect, strokeStyle.color!, lineWidth);
-    } else if (strokeStyle.gradient != null) {
-      _paintGradientStroke(canvas, rect, strokeStyle.gradient!, lineWidth);
+    if (color != null) {
+      _paintSolidStroke(canvas, rect, color, lineWidth);
+    } else if (gradient != null) {
+      _paintGradientStroke(canvas, rect, gradient, lineWidth);
     }
   }
 
@@ -132,8 +151,10 @@ class _RectanglePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _RectanglePainter oldDelegate) {
-    return oldDelegate.fill != fill ||
-        oldDelegate.stroke != stroke ||
+    return oldDelegate.fillColor != fillColor ||
+        oldDelegate.fillGradient != fillGradient ||
+        oldDelegate.strokeColor != strokeColor ||
+        oldDelegate.strokeGradient != strokeGradient ||
         oldDelegate.strokeLineWidth != strokeLineWidth;
   }
 }
