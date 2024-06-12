@@ -27,3 +27,7 @@ migrate_working_dir/
 **/doc/api/
 .dart_tool/
 build/
+
+# Don't check in golden failure output.
+test/**/failures/**
+test_goldens/**/failures/**

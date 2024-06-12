@@ -15,10 +15,12 @@ export 'src/layout/vstack.dart';
 export 'src/layout/zstack.dart';
 
 // Layout Adjustments
-export 'src/layout_adjustments/frame.dart';
+export 'src/layout/frame.dart';
+export 'src/layout/alignment.dart';
 
 // Shapes
 export 'src/shapes/ellipse.dart';
+export 'src/shapes/rectangle.dart';
 
 // Infrastructure
 export 'src/infrastructure/late_bound_build.dart';

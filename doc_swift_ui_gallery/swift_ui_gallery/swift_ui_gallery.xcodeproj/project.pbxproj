@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714951452C0EB31C00818B06 /* ShapesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714951442C0EB31C00818B06 /* ShapesPage.swift */; };
+		714951472C0EB52400818B06 /* RectangleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714951462C0EB52400818B06 /* RectangleExamples.swift */; };
 		7179CF832B26DEB900C5927B /* TextTypographyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF822B26DEB900C5927B /* TextTypographyPage.swift */; };
 		7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */; };
 		7179CF872B26DF0E00C5927B /* TextLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		714951442C0EB31C00818B06 /* ShapesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesPage.swift; sourceTree = "<group>"; };
+		714951462C0EB52400818B06 /* RectangleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleExamples.swift; sourceTree = "<group>"; };
 		7179CF822B26DEB900C5927B /* TextTypographyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTypographyPage.swift; sourceTree = "<group>"; };
 		7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAccessibilityPage.swift; sourceTree = "<group>"; };
 		7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLocalizationPage.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		714951432C0EB2C200818B06 /* shapes */ = {
+			isa = PBXGroup;
+			children = (
+				714951442C0EB31C00818B06 /* ShapesPage.swift */,
+				714951462C0EB52400818B06 /* RectangleExamples.swift */,
+			);
+			path = shapes;
+			sourceTree = "<group>";
+		};
 		7179CF882B26E2E900C5927B /* typography */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +200,7 @@
 				C9CAE2B62AE107D30042DBC7 /* scaffolds */,
 				C9CAE2B52AE107C90042DBC7 /* collections */,
 				C9CAE2B42AE107B60042DBC7 /* primitives */,
+				714951432C0EB2C200818B06 /* shapes */,
 				C9CAE2802AC23AB40042DBC7 /* swift_ui_galleryApp.swift */,
 				C9CAE2822AC23AB40042DBC7 /* ContentView.swift */,
 				C9CAE2842AC23AB50042DBC7 /* Assets.xcassets */,
@@ -411,12 +425,14 @@
 				C9CAE2AD2AE106420042DBC7 /* CollectionsPage.swift in Sources */,
 				719116892B216D500007C4DE /* TextPage.swift in Sources */,
 				7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */,
+				714951472C0EB52400818B06 /* RectangleExamples.swift in Sources */,
 				7179CF832B26DEB900C5927B /* TextTypographyPage.swift in Sources */,
 				C9CAE2832AC23AB40042DBC7 /* ContentView.swift in Sources */,
 				C9CAE2BB2AE1089A0042DBC7 /* LayoutsPage.swift in Sources */,
 				C9CAE2B12AE1065F0042DBC7 /* ControlsPage.swift in Sources */,
 				C9CAE2AB2ADFB1480042DBC7 /* PrimitivesPage.swift in Sources */,
 				C9FB17582C0C4D25004479AA /* ZStackExamples.swift in Sources */,
+				714951452C0EB31C00818B06 /* ShapesPage.swift in Sources */,
 				C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */,
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
 				B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */,

@@ -1,5 +1,8 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/widgets.dart' hide Alignment;
 
+import 'alignment.dart';
+
+/// A layout widget that aligns its child within a fixed-size rectangle.
 class Frame extends StatelessWidget {
   const Frame({
     super.key,
@@ -9,9 +12,22 @@ class Frame extends StatelessWidget {
     required this.child,
   });
 
+  /// The width of the frame.
+  ///
+  /// If `null`, the intrinsic width of the child is used.
   final double? width;
+
+  /// The height of the frame.
+  ///
+  /// If `null`, the intrinsic height of the child is used.
   final double? height;
+
+  /// The alignment of the child within the frame.
+  ///
+  /// See [Alignment] for more info about the available alignments.
   final Alignment alignment;
+
+  /// The child widget to be displayed within the frame.
   final Widget child;
 
   @override
@@ -20,12 +36,14 @@ class Frame extends StatelessWidget {
       return child;
     }
 
+    final textDirection = Directionality.of(context);
+
     if (width == null) {
       // Use the intrinsic width of the child.
       return SizedBox(
         height: height,
         child: Align(
-          alignment: alignment,
+          alignment: alignment.toFlutter(textDirection),
           child: IntrinsicWidth(
             child: child,
           ),
@@ -38,7 +56,7 @@ class Frame extends StatelessWidget {
       return SizedBox(
         width: width,
         child: Align(
-          alignment: alignment,
+          alignment: alignment.toFlutter(textDirection),
           child: IntrinsicHeight(
             child: child,
           ),
@@ -50,7 +68,7 @@ class Frame extends StatelessWidget {
       width: width,
       height: height,
       child: Align(
-        alignment: alignment,
+        alignment: alignment.toFlutter(textDirection),
         child: child,
       ),
     );
