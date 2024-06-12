@@ -1,5 +1,7 @@
 import 'package:flutter/widgets.dart';
 
+import '../layout_adjustments/alignment.dart' hide Alignment;
+
 /// A layout widget that displays its children horizontally, like a row.
 ///
 /// An `HStack` tightly wraps its [children]. Each child must have an intrinsic width
@@ -64,21 +66,4 @@ class HStack extends StatelessWidget {
             "HStack does not yet support this alignment: $alignment");
     }
   }
-}
-
-enum VerticalAlignment {
-  /// Alignment with the top of a bounding space.
-  top,
-
-  /// Alignment that's equidistant from the top and bottom of a bounding space.
-  center,
-
-  /// Alignment with the bottom of a bounding space.
-  bottom,
-
-  /// Alignment with the baseline of the first line of text within another widget.
-  firstTextBaseline,
-
-  /// Alignment with the baseline of the last line of text within another widget.
-  lastTextBaseline,
 }

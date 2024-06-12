@@ -1,5 +1,7 @@
 import 'package:flutter/widgets.dart';
 
+import '../layout_adjustments/alignment.dart' hide Alignment;
+
 /// A layout widget that displays its children vertically, like a column.
 ///
 /// A `VStack` tightly wraps its [children]. Each child must have an intrinsic height
@@ -63,27 +65,4 @@ class VStack extends StatelessWidget {
         throw Exception("VStack does not yet support this alignment: $alignment");
     }
   }
-}
-
-enum HorizontalAlignment {
-  /// Alignment with the "leading" or "starting" edge of a bounding space.
-  ///
-  /// In a left-to-right layout context, the leading edge is the left edge.
-  leading,
-
-  /// Alignment that's equidistant from the left and right edges of a bounding space.
-  center,
-
-  /// Alignment with the "trailing" or "ending" edge of a bounding space.
-  ///
-  /// In a left-to-right layout context, the trailing edge is the right edge.
-  trailing,
-
-  /// Alignment with the leading edge of a list separator - this alignment is only
-  /// relevant when a widget is displayed within a list that has dividers.
-  listRowSeparatorLeading,
-
-  /// Alignment with the trailing edge of a list separator - this alignment is only
-  /// relevant when a widget is displayed within a list that has dividers.
-  listRowSeparatorTrailing,
 }

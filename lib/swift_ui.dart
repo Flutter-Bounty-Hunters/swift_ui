@@ -16,6 +16,7 @@ export 'src/layout/zstack.dart';
 
 // Layout Adjustments
 export 'src/layout_adjustments/frame.dart';
+export 'src/layout_adjustments/alignment.dart';
 
 // Shapes
 export 'src/shapes/ellipse.dart';
