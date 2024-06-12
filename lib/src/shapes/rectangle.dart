@@ -44,15 +44,14 @@ class Rectangle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox.expand(
-      child: CustomPaint(
-        painter: _RectanglePainter(
-          fillColor: fillColor,
-          fillGradient: fillGradient,
-          strokeColor: strokeColor,
-          strokeGradient: strokeGradient,
-          strokeLineWidth: strokeLineWidth,
-        ),
+    return CustomPaint(
+      size: Size.infinite,
+      painter: _RectanglePainter(
+        fillColor: fillColor,
+        fillGradient: fillGradient,
+        strokeColor: strokeColor,
+        strokeGradient: strokeGradient,
+        strokeLineWidth: strokeLineWidth,
       ),
     );
   }

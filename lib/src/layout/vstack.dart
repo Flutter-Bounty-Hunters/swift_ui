@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import '../layout_adjustments/alignment.dart' hide Alignment;
+import 'alignment.dart' hide Alignment;
 
 /// A layout widget that displays its children vertically, like a column.
 ///

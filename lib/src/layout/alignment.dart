@@ -1,3 +1,5 @@
+import 'package:flutter/painting.dart' as painting;
+
 enum HorizontalAlignment {
   /// Alignment with the "leading" or "starting" edge of a bounding space.
   ///
@@ -114,4 +116,35 @@ enum Alignment {
 
   /// The vertical alignment of the widget within its bounding space.
   final VerticalAlignment vertical;
+
+  painting.AlignmentGeometry toFlutter(painting.TextDirection direction) {
+    final isLtr = direction == painting.TextDirection.ltr;
+    switch (this) {
+      case Alignment.center:
+        return painting.Alignment.center;
+      case Alignment.leading:
+        return isLtr ? painting.Alignment.centerLeft : painting.Alignment.centerRight;
+      case Alignment.trailing:
+        return isLtr ? painting.Alignment.centerRight : painting.Alignment.centerLeft;
+      case Alignment.top:
+        return painting.Alignment.topCenter;
+      case Alignment.bottom:
+        return painting.Alignment.bottomCenter;
+      case Alignment.topLeading:
+        return isLtr ? painting.Alignment.topLeft : painting.Alignment.topRight;
+      case Alignment.topTrailing:
+        return isLtr ? painting.Alignment.topRight : painting.Alignment.topLeft;
+      case Alignment.bottomLeading:
+        return isLtr ? painting.Alignment.bottomLeft : painting.Alignment.bottomRight;
+      case Alignment.bottomTrailing:
+        return isLtr ? painting.Alignment.bottomRight : painting.Alignment.bottomLeft;
+      case Alignment.centerFirstTextBaseline:
+      case Alignment.centerLastTextBaseline:
+      case Alignment.leadingFirstTextBaseline:
+      case Alignment.trailingFirstTextBaseline:
+      case Alignment.leadingLastTextBaseline:
+      case Alignment.trailingLastTextBaseline:
+        throw Exception("swift_ui does not yet support this alignment: $this");
+    }
+  }
 }

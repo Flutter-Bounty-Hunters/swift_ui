@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import '../layout_adjustments/alignment.dart' hide Alignment;
+import 'alignment.dart' hide Alignment;
 
 /// A layout widget that displays its children horizontally, like a row.
 ///
@@ -62,8 +62,7 @@ class HStack extends StatelessWidget {
         return CrossAxisAlignment.end;
       case VerticalAlignment.firstTextBaseline:
       case VerticalAlignment.lastTextBaseline:
-        throw Exception(
-            "HStack does not yet support this alignment: $alignment");
+        throw Exception("HStack does not yet support this alignment: $alignment");
     }
   }
 }
