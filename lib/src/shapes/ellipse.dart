@@ -108,7 +108,7 @@ class _EllipsePainter extends CustomPainter {
   }
 
   void _paintSolidStroke(Canvas canvas, Size size) {
-    final rect = _adjustRectForLineWidth(size);
+    final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final paint = Paint()
       ..style = PaintingStyle.stroke
       ..color = strokeColor!
@@ -116,17 +116,8 @@ class _EllipsePainter extends CustomPainter {
     canvas.drawOval(rect, paint);
   }
 
-  Rect _adjustRectForLineWidth(Size size) {
-    return Rect.fromLTWH(
-      strokeLineWidth / 2,
-      strokeLineWidth / 2,
-      size.width - strokeLineWidth,
-      size.height - strokeLineWidth,
-    );
-  }
-
   void _paintGradientStroke(Canvas canvas, Size size) {
-    final rect = _adjustRectForLineWidth(size);
+    final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final paint = Paint()
       ..style = PaintingStyle.stroke
       ..shader = strokeGradient!.createShader(rect)
