@@ -3,6 +3,8 @@ import 'package:example/infrastructure/inventory_page.dart';
 import 'package:example/shapes/rectangle.dart';
 import 'package:flutter/cupertino.dart';
 
+import 'ellipse.dart';
+
 class ShapesPage extends StatelessWidget {
   const ShapesPage({super.key});
 
@@ -16,6 +18,10 @@ class ShapesPage extends StatelessWidget {
             InventoryItem(
               label: "Rectangle",
               pageBuilder: createDemo(const RectangleDemo()),
+            ),
+            InventoryItem(
+              label: "Ellipse",
+              pageBuilder: createDemo(const EllipseDemo()),
             ),
           ],
         ),
