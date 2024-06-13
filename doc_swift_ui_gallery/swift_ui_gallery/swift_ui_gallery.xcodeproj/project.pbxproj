@@ -13,6 +13,7 @@
 		7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */; };
 		7179CF872B26DF0E00C5927B /* TextLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */; };
 		719116892B216D500007C4DE /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719116882B216D500007C4DE /* TextPage.swift */; };
+		71C346EF2C1A7B580087A514 /* EllipseExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C346EE2C1A7B580087A514 /* EllipseExamples.swift */; };
 		B3CBD1552B2E18320095DE1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */; };
 		B3CBD1572B2E1BE20095DE1F /* LocalizableAlternative.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */; };
 		B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD966F2B66513800F66E9F /* ImageLocalizationPage.swift */; };
@@ -59,6 +60,7 @@
 		7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAccessibilityPage.swift; sourceTree = "<group>"; };
 		7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLocalizationPage.swift; sourceTree = "<group>"; };
 		719116882B216D500007C4DE /* TextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
+		71C346EE2C1A7B580087A514 /* EllipseExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseExamples.swift; sourceTree = "<group>"; };
 		B3CBD1542B2E18320095DE1F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B3CBD1562B2E1BE20095DE1F /* LocalizableAlternative.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizableAlternative.xcstrings; sourceTree = "<group>"; };
 		B3DD966F2B66513800F66E9F /* ImageLocalizationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLocalizationPage.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				714951442C0EB31C00818B06 /* ShapesPage.swift */,
 				714951462C0EB52400818B06 /* RectangleExamples.swift */,
+				71C346EE2C1A7B580087A514 /* EllipseExamples.swift */,
 			);
 			path = shapes;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				C9FB17582C0C4D25004479AA /* ZStackExamples.swift in Sources */,
 				714951452C0EB31C00818B06 /* ShapesPage.swift in Sources */,
 				C902DDE72AE3904400242DBA /* TodoPage.swift in Sources */,
+				71C346EF2C1A7B580087A514 /* EllipseExamples.swift in Sources */,
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
 				B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */,
 				C9FB17562C0C4AB4004479AA /* HStackExamples.swift in Sources */,

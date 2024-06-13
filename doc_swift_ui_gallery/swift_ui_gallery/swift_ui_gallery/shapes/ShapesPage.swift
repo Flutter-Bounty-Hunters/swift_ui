@@ -9,6 +9,12 @@ struct ShapesPage: View {
                 } label: {
                     Text("Rectangle")
                 }
+                
+                NavigationLink {
+                    EllipsePage()
+                } label: {
+                    Text("Ellipse")
+                }
             }.navigationTitle("Shapes")
         }
     }
