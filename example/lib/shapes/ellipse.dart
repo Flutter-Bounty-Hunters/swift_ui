@@ -51,6 +51,21 @@ class EllipseDemo extends StatelessWidget {
             strokeLineWidth: 14.0,
           ),
         ),
+
+        // Ellipse with shadow
+        Frame(
+          width: 200,
+          height: 100,
+          child: Shadow(
+            color: Colors.white54,
+            radius: 10,
+            x: 10,
+            y: 10,
+            child: Ellipse(
+              fillColor: Colors.purple,
+            ),
+          ),
+        ),
       ],
       spacing: 20,
     );

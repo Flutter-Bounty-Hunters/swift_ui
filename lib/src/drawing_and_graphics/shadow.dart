@@ -40,7 +40,6 @@ class Shadow extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: color,
-            spreadRadius: radius,
             blurRadius: radius,
             offset: Offset(x, y),
           ),
