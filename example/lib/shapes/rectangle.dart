@@ -52,6 +52,7 @@ class RectangleDemo extends StatelessWidget {
           ),
         ),
       ],
+      spacing: 20,
     );
   }
 }
