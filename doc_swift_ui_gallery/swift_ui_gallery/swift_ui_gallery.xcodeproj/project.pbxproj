@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		714951452C0EB31C00818B06 /* ShapesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714951442C0EB31C00818B06 /* ShapesPage.swift */; };
 		714951472C0EB52400818B06 /* RectangleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714951462C0EB52400818B06 /* RectangleExamples.swift */; };
+		717523012C1D330600FB7CF3 /* ShadowExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717523002C1D330500FB7CF3 /* ShadowExamples.swift */; };
 		7179CF832B26DEB900C5927B /* TextTypographyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF822B26DEB900C5927B /* TextTypographyPage.swift */; };
 		7179CF852B26DEDD00C5927B /* TextAccessibilityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */; };
 		7179CF872B26DF0E00C5927B /* TextLocalizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		714951442C0EB31C00818B06 /* ShapesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesPage.swift; sourceTree = "<group>"; };
 		714951462C0EB52400818B06 /* RectangleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleExamples.swift; sourceTree = "<group>"; };
+		717523002C1D330500FB7CF3 /* ShadowExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowExamples.swift; sourceTree = "<group>"; };
 		7179CF822B26DEB900C5927B /* TextTypographyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTypographyPage.swift; sourceTree = "<group>"; };
 		7179CF842B26DEDD00C5927B /* TextAccessibilityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAccessibilityPage.swift; sourceTree = "<group>"; };
 		7179CF862B26DF0E00C5927B /* TextLocalizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLocalizationPage.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				714951442C0EB31C00818B06 /* ShapesPage.swift */,
 				714951462C0EB52400818B06 /* RectangleExamples.swift */,
 				71C346EE2C1A7B580087A514 /* EllipseExamples.swift */,
+				717523002C1D330500FB7CF3 /* ShadowExamples.swift */,
 			);
 			path = shapes;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				C9CAE2B32AE1066B0042DBC7 /* MotionPage.swift in Sources */,
 				B3DD96702B66513800F66E9F /* ImageLocalizationPage.swift in Sources */,
 				C9FB17562C0C4AB4004479AA /* HStackExamples.swift in Sources */,
+				717523012C1D330600FB7CF3 /* ShadowExamples.swift in Sources */,
 				C9CAE2812AC23AB40042DBC7 /* swift_ui_galleryApp.swift in Sources */,
 				C902DDE52AE38C8A00242DBA /* VStackExamples.swift in Sources */,
 				C9CAE2AF2AE106540042DBC7 /* ScaffoldsPage.swift in Sources */,
