@@ -51,21 +51,6 @@ class RectangleDemo extends StatelessWidget {
             strokeLineWidth: 14.0,
           ),
         ),
-
-        // Rectangle with shadow
-        Frame(
-          width: 200,
-          height: 100,
-          child: Shadow(
-            color: Colors.white54,
-            radius: 10,
-            x: 10,
-            y: 10,
-            child: Rectangle(
-              fillColor: Colors.purple,
-            ),
-          ),
-        ),
       ],
       spacing: 20,
     );
