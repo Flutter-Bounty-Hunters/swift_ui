@@ -19,6 +19,11 @@ struct ShadowPage: View {
                     .stroke(Color.blue, lineWidth: 5)
                     .frame(width: 200, height: 200)
                     .shadow(color: .gray, radius: 10, x: 10, y: 10)
+                    
+                Ellipse()
+                    .stroke(Color.red, lineWidth: 5)
+                    .shadow(color: .gray, radius: 10, x: 10, y: 10)
+                    .frame(width: 200, height: 100)
                 
             }.frame(width: 300)
         }

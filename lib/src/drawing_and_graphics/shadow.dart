@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/widgets.dart';
 
 /// A widget that adds a shadow effect to its child widget.
@@ -35,16 +37,92 @@ class Shadow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: color,
-            blurRadius: radius,
-            offset: Offset(x, y),
+    return Stack(
+      children: [
+        Transform.translate(
+          offset: Offset(x, y),
+          child: Blur(
+            sigmaX: radius,
+            sigmaY: radius,
+            child: Tint(
+              color: color,
+              child: Desaturate(
+                child: child,
+              ),
+            ),
           ),
-        ],
+        ),
+        child
+      ],
+    );
+  }
+}
+
+class Blur extends StatelessWidget {
+  final Widget child;
+  final double sigmaX;
+  final double sigmaY;
+
+  const Blur({
+    super.key,
+    required this.child,
+    this.sigmaX = 5.0,
+    this.sigmaY = 5.0,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ImageFiltered(
+      imageFilter: ImageFilter.blur(
+        sigmaX: sigmaX,
+        sigmaY: sigmaY,
+        tileMode: TileMode.decal,
       ),
+      child: child,
+    );
+  }
+}
+
+class Tint extends StatelessWidget {
+  final Widget child;
+  final Color color;
+
+  const Tint({
+    super.key,
+    required this.child,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ColorFiltered(
+      colorFilter: ColorFilter.mode(
+        color,
+        BlendMode.modulate,
+      ),
+      child: child,
+    );
+  }
+}
+
+class Desaturate extends StatelessWidget {
+  final Widget child;
+
+  const Desaturate({
+    super.key,
+    required this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    const whiteFilter = ColorFilter.matrix(<double>[
+      1, 1, 1, 0, 0, //
+      1, 1, 1, 0, 0, //
+      1, 1, 1, 0, 0, //
+      0, 0, 0, 1, 0, //
+    ]);
+    return ColorFiltered(
+      colorFilter: whiteFilter,
       child: child,
     );
   }

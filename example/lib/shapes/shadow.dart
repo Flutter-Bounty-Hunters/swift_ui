@@ -8,58 +8,82 @@ class ShadowDemo extends StatelessWidget {
     super.key,
   });
 
+  static const color = Colors.grey;
+  static const radius = 10.0;
+  static const x = 10.0;
+  static const y = 10.0;
+
   @override
   Widget build(BuildContext context) {
-    return const VStack(
-      [
-        // Rectangle with shadow
-        Frame(
-          width: 200,
-          height: 100,
-          child: Shadow(
-            color: Colors.white54,
-            radius: 10,
-            x: 10,
-            y: 10,
-            child: Rectangle(
-              fillColor: Colors.purple,
+    return Container(
+      color: Colors.white,
+      child: const VStack(
+        [
+          // Rectangle with shadow
+          Frame(
+            width: 200,
+            height: 100,
+            child: Shadow(
+              color: color,
+              radius: radius,
+              x: x,
+              y: y,
+              child: Rectangle(
+                fillColor: Colors.purple,
+              ),
             ),
           ),
-        ),
 
-        // Ellipse with shadow
-        Frame(
-          width: 200,
-          height: 100,
-          child: Shadow(
-            color: Colors.white54,
-            radius: 10,
-            x: 10,
-            y: 10,
-            child: Ellipse(
-              fillColor: Colors.yellow,
+          // Ellipse with shadow
+          Frame(
+            width: 200,
+            height: 100,
+            child: Shadow(
+              color: color,
+              radius: radius,
+              x: x,
+              y: y,
+              child: Ellipse(
+                fillColor: Colors.yellow,
+              ),
             ),
           ),
-        ),
 
-        // Star with shadow
-        Frame(
-          width: 200,
-          height: 200,
-          child: Shadow(
-            color: Colors.white54,
-            radius: 10,
-            x: 10,
-            y: 10,
-            child: Star(
-              points: 5,
-              strokeLineWidth: 5,
-              strokeColor: Colors.blue,
+          // Star with shadow
+          Frame(
+            width: 200,
+            height: 200,
+            child: Shadow(
+              color: color,
+              radius: radius,
+              x: x,
+              y: y,
+              child: Star(
+                points: 5,
+                strokeLineWidth: 5,
+                strokeColor: Colors.blue,
+              ),
             ),
           ),
-        ),
-      ],
-      spacing: 20,
+
+          // stroked ellipse
+          Frame(
+            width: 200,
+            height: 100,
+            child: Shadow(
+              color: color,
+              radius: radius,
+              x: x,
+              y: y,
+              child: Ellipse(
+                strokeColor: Colors.red,
+                strokeLineWidth: 5,
+              ),
+            ),
+          ),
+        ],
+        spacing: 20,
+      ),
     );
   }
 }
