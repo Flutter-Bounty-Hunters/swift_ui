@@ -23,7 +23,14 @@ struct RectanglePage: View {
                 Rectangle()
                     .stroke(LinearGradient(gradient: Gradient(colors: [.yellow, .blue]), startPoint: .leading, endPoint: .trailing), lineWidth: 14)
                     .frame(width: 200, height: 100)
-            }
+                
+                // Rectangle with shadow
+                Rectangle()
+                    .fill(Color.purple)
+                    .shadow(color: .gray, radius: 10, x: 10, y: 10)
+                    .frame(width: 200, height: 100)
+                
+            }.frame(width: 300)
         }
     }
 }
