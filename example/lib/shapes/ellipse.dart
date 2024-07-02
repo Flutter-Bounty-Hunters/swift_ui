@@ -14,7 +14,7 @@ class EllipseDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Ellipse(
+          Ellipse(
             fillColor: Colors.blue,
           ),
         ),
@@ -23,7 +23,7 @@ class EllipseDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Ellipse(
+          Ellipse(
             fillGradient: LinearGradient(
               colors: [Colors.yellow, Colors.orange],
             ),
@@ -34,7 +34,7 @@ class EllipseDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Ellipse(
+          Ellipse(
             strokeColor: Colors.red,
             strokeLineWidth: 4.0,
           ),
@@ -44,7 +44,7 @@ class EllipseDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Ellipse(
+          Ellipse(
             strokeGradient: LinearGradient(
               colors: [Colors.yellow, Colors.blue],
             ),

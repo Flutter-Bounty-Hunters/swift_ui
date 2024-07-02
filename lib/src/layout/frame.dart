@@ -4,12 +4,12 @@ import 'alignment.dart';
 
 /// A layout widget that aligns its child within a fixed-size rectangle.
 class Frame extends StatelessWidget {
-  const Frame({
+  const Frame(
+    this.child, {
     super.key,
     this.width,
     this.height,
     this.alignment = Alignment.center,
-    required this.child,
   });
 
   /// The width of the frame.

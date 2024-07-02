@@ -23,6 +23,7 @@ struct EllipsePage: View {
                 Ellipse()
                     .stroke(LinearGradient(gradient: Gradient(colors: [.yellow, .blue]), startPoint: .leading, endPoint: .trailing), lineWidth: 14)
                     .frame(width: 200, height: 100)
+                
             }.frame(width: 300)
         }
     }
