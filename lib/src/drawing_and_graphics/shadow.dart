@@ -3,11 +3,11 @@ import 'dart:ui';
 import 'package:flutter/widgets.dart';
 
 /// A widget that adds a shadow effect to its child widget.
+///
+/// Non-rectangular child shapes are supported. In addition to supplying a
+/// child widget, you must also specify the radius of the shadow, which is a
+/// measure of how fuzzy the edge of the shadow should be.
 class Shadow extends StatelessWidget {
-  /// Creates a Shadow widget with the given properties.
-  ///
-  /// Use the [radius] to set the amount of blur, where `0.0` is sharp and a higher
-  /// value is more fuzzy. You can also set the shadow [color] and ([x], [y]) offset.
   const Shadow(
     this.child, {
     super.key,
