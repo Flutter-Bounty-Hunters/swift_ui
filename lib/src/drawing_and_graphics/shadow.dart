@@ -8,14 +8,14 @@ class Shadow extends StatelessWidget {
   ///
   /// Use the [radius] to set the amount of blur, where `0.0` is sharp and a higher
   /// value is more fuzzy. You can also set the shadow [color] and ([x], [y]) offset.
-  const Shadow({
+  const Shadow(
+    this.child, {
     super.key,
     // In SwiftUI the default is `Color(.sRGBLinear, white: 0, opacity: 0.33)`
     this.color = const Color(0x54000000),
     required this.radius,
     this.x = 0,
     this.y = 0,
-    required this.child,
   });
 
   /// The color of the shadow.

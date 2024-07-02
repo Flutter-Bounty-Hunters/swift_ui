@@ -23,12 +23,12 @@ class ShadowDemo extends StatelessWidget {
           Frame(
             width: 200,
             height: 100,
-            child: Shadow(
+            Shadow(
               color: color,
               radius: radius,
               x: x,
               y: y,
-              child: Rectangle(
+              Rectangle(
                 fillColor: Colors.purple,
               ),
             ),
@@ -38,12 +38,12 @@ class ShadowDemo extends StatelessWidget {
           Frame(
             width: 200,
             height: 100,
-            child: Shadow(
+            Shadow(
               color: color,
               radius: radius,
               x: x,
               y: y,
-              child: Ellipse(
+              Ellipse(
                 fillColor: Colors.yellow,
               ),
             ),
@@ -53,12 +53,12 @@ class ShadowDemo extends StatelessWidget {
           Frame(
             width: 200,
             height: 200,
-            child: Shadow(
+            Shadow(
               color: color,
               radius: radius,
               x: x,
               y: y,
-              child: Star(
+              Star(
                 points: 5,
                 strokeLineWidth: 5,
                 strokeColor: Colors.blue,
@@ -70,12 +70,12 @@ class ShadowDemo extends StatelessWidget {
           Frame(
             width: 200,
             height: 100,
-            child: Shadow(
+            Shadow(
               color: color,
               radius: radius,
               x: x,
               y: y,
-              child: Ellipse(
+              Ellipse(
                 strokeColor: Colors.red,
                 strokeLineWidth: 5,
               ),

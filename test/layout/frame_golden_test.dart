@@ -15,7 +15,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.center,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -31,7 +31,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.top,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -47,7 +47,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.bottom,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -63,7 +63,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.leading,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -79,7 +79,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.trailing,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -95,7 +95,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.topLeading,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -111,7 +111,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.topTrailing,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -127,7 +127,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.bottomLeading,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,
@@ -143,7 +143,7 @@ void main() {
               width: 100,
               height: 100,
               alignment: Alignment.bottomTrailing,
-              child: Container(
+              Container(
                 width: 10,
                 height: 10,
                 color: Colors.blue,

@@ -11,11 +11,11 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Shadow(
+            Shadow(
               radius: 5,
               x: 5,
               y: 5,
-              child: Rectangle(
+              Rectangle(
                 fillColor: Colors.blue,
               ),
             ),
@@ -26,11 +26,11 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Shadow(
+            Shadow(
               radius: 5,
               x: 5,
               y: 5,
-              child: Ellipse(
+              Ellipse(
                 fillColor: Colors.blue,
               ),
             ),
@@ -41,11 +41,11 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Shadow(
+            Shadow(
               radius: 5,
               x: 5,
               y: 5,
-              child: Ellipse(
+              Ellipse(
                 strokeLineWidth: 5,
                 strokeColor: Colors.blue,
               ),

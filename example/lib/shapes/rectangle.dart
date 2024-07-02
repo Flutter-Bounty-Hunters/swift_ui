@@ -14,7 +14,7 @@ class RectangleDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Rectangle(
+          Rectangle(
             fillColor: Colors.blue,
           ),
         ),
@@ -23,7 +23,7 @@ class RectangleDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Rectangle(
+          Rectangle(
             fillGradient: LinearGradient(
               colors: [Colors.yellow, Colors.orange],
             ),
@@ -34,7 +34,7 @@ class RectangleDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Rectangle(
+          Rectangle(
             strokeColor: Colors.red,
             strokeLineWidth: 4.0,
           ),
@@ -44,7 +44,7 @@ class RectangleDemo extends StatelessWidget {
         Frame(
           width: 200,
           height: 100,
-          child: Rectangle(
+          Rectangle(
             strokeGradient: LinearGradient(
               colors: [Colors.yellow, Colors.blue],
             ),
