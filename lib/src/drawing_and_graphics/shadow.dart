@@ -44,11 +44,9 @@ class Shadow extends StatelessWidget {
           child: Blur(
             sigmaX: radius,
             sigmaY: radius,
-            child: Tint(
+            Tint(
               color: color,
-              child: Desaturate(
-                child: child,
-              ),
+              Desaturate(child),
             ),
           ),
         ),
@@ -58,17 +56,29 @@ class Shadow extends StatelessWidget {
   }
 }
 
+/// A widget that applies a blur filter to its child widget.
+///
+///
 class Blur extends StatelessWidget {
-  final Widget child;
-  final double sigmaX;
-  final double sigmaY;
-
-  const Blur({
+  const Blur(
+    this.child, {
     super.key,
-    required this.child,
     this.sigmaX = 5.0,
     this.sigmaY = 5.0,
   });
+
+  /// The widget to which the blur filter will be applied.
+  final Widget child;
+
+  /// The horizontal blur radius.
+  ///
+  /// The default is 5.0.
+  final double sigmaX;
+
+  /// The vertical blur radius.
+  ///
+  /// The default is 5.0.
+  final double sigmaY;
 
   @override
   Widget build(BuildContext context) {
@@ -83,15 +93,21 @@ class Blur extends StatelessWidget {
   }
 }
 
+/// A widget that applies a color filter to its child widget.
+///
+/// You must specify a color.
 class Tint extends StatelessWidget {
-  final Widget child;
-  final Color color;
-
-  const Tint({
+  const Tint(
+    this.child, {
     super.key,
-    required this.child,
     required this.color,
   });
+
+  /// The widget to which the color filter will be applied.
+  final Widget child;
+
+  /// The color to which the child will be tinted.
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -105,13 +121,14 @@ class Tint extends StatelessWidget {
   }
 }
 
+/// A widget that removes the RGB saturation of its child widget.
 class Desaturate extends StatelessWidget {
-  final Widget child;
-
-  const Desaturate({
+  const Desaturate(
+    this.child, {
     super.key,
-    required this.child,
   });
+
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
