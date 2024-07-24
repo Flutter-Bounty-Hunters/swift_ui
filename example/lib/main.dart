@@ -34,7 +34,6 @@ class NavigationViewState extends State<NavigationView> {
           height: 54,
           color: const Color(0xFFFFFF00),
           child: Center(
-            // child: LateBoundBuilder(
             child: LateBoundBuild(
               builder: (context) {
                 final title = NavigationView.of(context).title ?? "DEFAULT TILE";

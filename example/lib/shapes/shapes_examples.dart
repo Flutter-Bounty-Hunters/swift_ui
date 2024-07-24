@@ -4,6 +4,7 @@ import 'package:example/shapes/rectangle.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'ellipse.dart';
+import 'shadow.dart';
 
 class ShapesPage extends StatelessWidget {
   const ShapesPage({super.key});
@@ -14,6 +15,7 @@ class ShapesPage extends StatelessWidget {
       title: "Shapes",
       groups: [
         InventoryGroup(
+          title: "SHAPES",
           items: [
             InventoryItem(
               label: "Rectangle",
@@ -22,6 +24,15 @@ class ShapesPage extends StatelessWidget {
             InventoryItem(
               label: "Ellipse",
               pageBuilder: createDemo(const EllipseDemo()),
+            ),
+          ],
+        ),
+        InventoryGroup(
+          title: "MODIFIERS",
+          items: [
+            InventoryItem(
+              label: "Shadow",
+              pageBuilder: createDemo(const ShadowDemo()),
             ),
           ],
         ),

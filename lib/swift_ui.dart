@@ -5,6 +5,7 @@ export 'src/controls_and_indicators/button.dart';
 
 // Drawing and Graphics
 export 'src/drawing_and_graphics/border.dart';
+export 'src/drawing_and_graphics/shadow.dart';
 
 // Layout
 export 'src/layout/grid.dart';

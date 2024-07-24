@@ -12,7 +12,7 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Ellipse(
+            Ellipse(
               fillColor: Colors.blue,
             ),
           ),
@@ -22,7 +22,7 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Ellipse(
+            Ellipse(
               fillGradient: LinearGradient(
                 colors: [Colors.yellow, Colors.orange],
               ),
@@ -34,7 +34,7 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Ellipse(
+            Ellipse(
               strokeColor: Colors.blue,
             ),
           ),
@@ -44,7 +44,7 @@ void main() {
           const Frame(
             width: 200,
             height: 100,
-            child: Ellipse(
+            Ellipse(
               strokeGradient: LinearGradient(
                 colors: [Colors.yellow, Colors.orange],
               ),

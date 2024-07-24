@@ -2,10 +2,10 @@ import 'package:flutter/widgets.dart' as widgets;
 
 class Border extends widgets.StatelessWidget {
   const Border(
-    this.color, {
+    this.child, {
+    required this.color,
     super.key,
     this.width = 1,
-    required this.child,
   });
 
   final widgets.Color color;

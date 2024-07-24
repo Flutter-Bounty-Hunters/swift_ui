@@ -23,21 +23,18 @@ class Rectangle extends StatelessWidget {
 
   /// A color used for painting the outline of the rectangle.
   ///
-  /// The stroke line is drawn inside the frame of the rectangle, and its
-  /// width is determined by [strokeLineWidth].
-  ///
   /// This is an alternative to [strokeGradient].
   final Color? strokeColor;
 
   /// A gradient used for painting the outline of the rectangle.
   ///
-  /// The stroke line is drawn inside the frame of the rectangle, and its
-  /// width is determined by [strokeLineWidth].
-  ///
   /// This is an alternative to [strokeColor].
   final Gradient? strokeGradient;
 
   /// The width of the stroke used to paint the outline of the rectangle.
+  ///
+  /// The stroke line is centered along the edge of the rectangle. Half of
+  /// [strokeLineWidth] is painted outside of the rectangle and half inside.
   ///
   /// The default is 1.0.
   final double strokeLineWidth;
@@ -111,7 +108,7 @@ class _RectanglePainter extends CustomPainter {
   }
 
   void _paintSolidStroke(Canvas canvas, Size size) {
-    final rect = _adjustRectForLineWidth(size);
+    final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final paint = Paint()
       ..style = PaintingStyle.stroke
       ..color = strokeColor!
@@ -119,17 +116,8 @@ class _RectanglePainter extends CustomPainter {
     canvas.drawRect(rect, paint);
   }
 
-  Rect _adjustRectForLineWidth(Size size) {
-    return Rect.fromLTWH(
-      strokeLineWidth / 2,
-      strokeLineWidth / 2,
-      size.width - strokeLineWidth,
-      size.height - strokeLineWidth,
-    );
-  }
-
   void _paintGradientStroke(Canvas canvas, Size size) {
-    final rect = _adjustRectForLineWidth(size);
+    final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final paint = Paint()
       ..style = PaintingStyle.stroke
       ..shader = strokeGradient!.createShader(rect)

@@ -4,17 +4,34 @@ struct ShapesPage: View {
     var body: some View {
         NavigationStack {
             List() {
-                NavigationLink {
-                    RectanglePage()
-                } label: {
-                    Text("Rectangle")
+                Section() {
+                    NavigationLink {
+                        RectanglePage()
+                    } label: {
+                        Text("Rectangle")
+                    }
+                    
+                    NavigationLink {
+                        EllipsePage()
+                    } label: {
+                        Text("Ellipse")
+                    }
+                    
+                } header: {
+                    Text("Shapes")
                 }
                 
-                NavigationLink {
-                    EllipsePage()
-                } label: {
-                    Text("Ellipse")
+                Section() {
+                    NavigationLink {
+                        ShadowPage()
+                    } label: {
+                        Text("shadow")
+                    }
+                } header: {
+                    Text("View methods")
                 }
+                
+                
             }.navigationTitle("Shapes")
         }
     }
